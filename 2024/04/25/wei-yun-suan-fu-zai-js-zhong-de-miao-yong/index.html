@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="个人收藏的前端学习资料, 前端 JS HTML CSS Linux">
+    <meta name="keywords" content="位运算符在JS中的妙用, 前端 JS HTML CSS Linux">
     <meta name="description" content="Looking up cases and codes occasionally is convenient, as it allows you to document your experiences and knowledge, enabling you to share and teach others. This process is akin to reviewing the knowledge and acquiring a more profound comprehension of it">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>个人收藏的前端学习资料 | Alan Work&#39;s Notes</title>
+    <title>位运算符在JS中的妙用 | Alan Work&#39;s Notes</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">个人收藏的前端学习资料</h1>
+                    <h1 class="description center-align post-title">位运算符在JS中的妙用</h1>
                 </div>
             </div>
         </div>
@@ -431,8 +431,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/">
-                                <span class="chip bg-color">学习资料</span>
+                            <a href="/tags/JS/">
+                                <span class="chip bg-color">JS</span>
                             </a>
                         
                     </div>
@@ -456,7 +456,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-04-19
+                    2024-04-25
                 </div>
                 
 
@@ -470,14 +470,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -500,198 +500,139 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="分享一些个人收藏的前端学习资料"><a href="#分享一些个人收藏的前端学习资料" class="headerlink" title="分享一些个人收藏的前端学习资料"></a>分享一些个人收藏的前端学习资料</h1><p>为了方便，以后相关资料会第一时间更新在此repo：<a target="_blank" rel="noopener" href="https://github.com/jCodeLife/quality-front-end-resources" title="https://github.com/jCodeLife/quality-front-end-resources">quality-front-end-resources</a></p>
-<h2 id="一、文章"><a href="#一、文章" class="headerlink" title="一、文章"></a>一、文章</h2><h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://es6.ruanyifeng.com/" title="https://es6.ruanyifeng.com">ECMAScript 6 入门</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6968713283884974088" title="https://juejin.cn/post/6968713283884974088">最全的手写JS面试题</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6994594642280857630" title="https://juejin.cn/post/6994594642280857630">看了就会，手写Promise原理，最通俗易懂的版本！！！</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903512845860872" title="https://juejin.cn/post/6844903512845860872">这一次，彻底弄懂 JavaScript 执行机制</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904200917221389" title="https://juejin.cn/post/6844904200917221389">由浅入深，66条JavaScript面试知识点</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903479429824526" title="https://juejin.cn/post/6844903479429824526">JavaScript深入系列15篇正式完结！</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903809206976520" title="https://juejin.cn/post/6844903809206976520">「中高级前端面试」JavaScript手写代码无敌秘籍</a></li>
-<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/" title="https://zh.javascript.info/">现代 JavaScript 教程</a></li>
+                <h1 id="位运算符在JS中的妙用"><a href="#位运算符在JS中的妙用" class="headerlink" title="位运算符在JS中的妙用"></a>位运算符在JS中的妙用</h1><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903568906911752">singcl</a></p>
+<blockquote>
+<ul>
+<li>所有 <code>JavaScript</code> 数字存储为根为10的64（8比特）浮点数。<code>JavaScrip</code>t不是类型语言。与许多其他编程语言不同，<code>JavaScript</code>不定义不同类型的数字，比如整数、短、长、浮点等等。</li>
+<li>整数精度（不使用小数点或指数计数法）最多为15位。小数精度的最大位数是17，但是浮点运算并不总是100% 准确。</li>
+<li>位运算直接对二进制位进行计算，位运算直接处理每一个比特位，是非常底层的运算，好处是速度极快，缺点是很不直观，许多场合不能够使用。</li>
+<li>位运算只对整数起作用，如果一个运算数不是整数，会自动转为整数后再运行。</li>
+<li>在<code>JavaScript</code>内部，数值都是以64位浮点数的形式储存，但是做位运算的时候，是以32位带符号的整数进行运算的，并且返回值也是一个32位带符号的整数。</li>
+</ul>
+</blockquote>
+<h2 id="JS中常用的7个位运算符"><a href="#JS中常用的7个位运算符" class="headerlink" title="JS中常用的7个位运算符"></a>JS中常用的7个位运算符</h2><h3 id="1-按位与-AND"><a href="#1-按位与-AND" class="headerlink" title="1. 按位与(AND) &amp;"></a>1. 按位与(AND) <code>&amp;</code></h3><p><code>&amp;</code>以特定的方式组合操作二进制数中对应的位，如果对应的位都为1，那么结果就是1， 如果任意一个位是0 则结果就是0。</p>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+&#x2F;&#x2F; 1的二进制表示为: 00000000 00000000 00000000 00000001
+&#x2F;&#x2F; 3的二进制表示为: 00000000 00000000 00000000 00000011
+&#x2F;&#x2F; -----------------------------
+&#x2F;&#x2F; 1的二进制表示为: 00000000 00000000 00000000 00000001
+console.log(1 &amp; 3)     &#x2F;&#x2F; 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2-按位或-OR"><a href="#2-按位或-OR" class="headerlink" title="2. 按位或(OR) |"></a>2. 按位或(OR) <code>|</code></h3><p><code>|</code> 运算符跟 <code>&amp;</code> 的区别在于如果对应的位中任一个操作数为1 那么结果就是1。</p>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+&#x2F;&#x2F; 1的二进制表示为: 00000000 00000000 00000000 00000001
+&#x2F;&#x2F; 3的二进制表示为: 00000000 00000000 00000000 00000011
+&#x2F;&#x2F; -----------------------------
+&#x2F;&#x2F; 3的二进制表示为: 00000000 00000000 00000000 00000011
+console.log(1 | 3)     &#x2F;&#x2F; 3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="3-按位异或-XOR"><a href="#3-按位异或-XOR" class="headerlink" title="3. 按位异或(XOR) ^"></a>3. 按位异或(XOR) <code>^</code></h3><p><code>^</code> 如果对应两个操作位有且仅有一个1时结果为1，其他都是0。</p>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+&#x2F;&#x2F; 1的二进制表示为: 00000000 00000000 00000000 00000001
+&#x2F;&#x2F; 3的二进制表示为: 00000000 00000000 00000000 00000011
+&#x2F;&#x2F; -----------------------------
+&#x2F;&#x2F; 2的二进制表示为: 00000000 00000000 00000000 00000010
+console.log(1 ^ 3)     &#x2F;&#x2F; 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="4-按位非-NOT"><a href="#4-按位非-NOT" class="headerlink" title="4. 按位非(NOT) ~"></a>4. 按位非(NOT) <code>~</code></h3><p><code>~</code> 运算符是对位求反，1变0, 0变1，也就是求二进制的反码。</p>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+&#x2F;&#x2F; 1的二进制表示为: 00000000 00000000 00000000 00000001
+&#x2F;&#x2F; 3的二进制表示为: 00000000 00000000 00000000 00000011
+&#x2F;&#x2F; -----------------------------
+&#x2F;&#x2F; 1反码二进制表示: 11111111 11111111 11111111 11111110
+&#x2F;&#x2F; 由于第一位（符号位）是1，所以这个数是一个负数。JavaScript 内部采用补码形式表示负数，即需要将这个数减去1，再取一次反，然后加上负号，才能得到这个负数对应的10进制值。
+&#x2F;&#x2F; -----------------------------
+&#x2F;&#x2F; 1的反码减1：     11111111 11111111 11111111 11111101
+&#x2F;&#x2F; 反码取反：       00000000 00000000 00000000 00000010
+&#x2F;&#x2F; 表示为10进制加负号：-2
+console.log(~ 1)     &#x2F;&#x2F; -2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><strong>简单记忆：一个数与自身的取反值相加等于-1</strong>。</li>
+</ul>
+<h3 id="5-左移（Left-shift）"><a href="#5-左移（Left-shift）" class="headerlink" title="5. 左移（Left shift）&lt;&lt;"></a>5. 左移（Left shift）<code>&lt;&lt;</code></h3><p><code>&lt;&lt;</code>运算符使指定值的二进制数所有位都左移指定次数，其移动规则：<strong>丢弃高位，低位补0</strong>即按二进制形式把所有的数字向左移动对应的位数，高位移出(舍弃)，低位的空位补零。</p>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+&#x2F;&#x2F; 1的二进制表示为: 00000000 00000000 00000000 00000001
+&#x2F;&#x2F; -----------------------------
+&#x2F;&#x2F; 2的二进制表示为: 00000000 00000000 00000000 00000010
+console.log(1 &lt;&lt; 1)     &#x2F;&#x2F; 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="6-有符号右移"><a href="#6-有符号右移" class="headerlink" title="6. 有符号右移&gt;&gt;"></a>6. 有符号右移<code>&gt;&gt;</code></h3><p><code>&gt;&gt;</code>该操作符会将指定操作数的二进制位向右移动指定的位数。<strong>向右被移出的位被丢弃，拷贝最左侧的位以填充左侧</strong>。由于新的最左侧的位总是和以前相同，符号位没有被改变。所以被称作“符号传播”。</p>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+&#x2F;&#x2F; 1的二进制表示为: 00000000 00000000 00000000 00000001
+&#x2F;&#x2F; -----------------------------
+&#x2F;&#x2F; 0的二进制表示为: 00000000 00000000 00000000 00000000
+console.log(1 &gt;&gt; 1)     &#x2F;&#x2F; 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="7-无符号右移"><a href="#7-无符号右移" class="headerlink" title="7. 无符号右移&gt;&gt;&gt;"></a>7. 无符号右移<code>&gt;&gt;&gt;</code></h3><p><code>&gt;&gt;&gt;</code>该操作符会将第一个操作数向右移动指定的位数。向右被移出的位被丢弃，左侧用0填充。因为符号位变成了 0，所以结果总是非负的。（译注：即便右移 0 个比特，结果也是非负的。）</p>
+<p>对于非负数，有符号右移和无符号右移总是返回相同的结果。例如， <code>9 &gt;&gt;&gt; 2</code> 得到 <code>2 和 9 &gt;&gt; 2</code> 相同。</p>
+<h2 id="位运算符在js中的妙用"><a href="#位运算符在js中的妙用" class="headerlink" title="位运算符在js中的妙用"></a>位运算符在js中的妙用</h2><ol>
+<li>使用&amp;运算符判断一个数的奇偶</li>
 </ol>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://yanhaijing.com/css/2017/09/29/principle-of-rem-layout/" title="https://yanhaijing.com/css/2017/09/29/principle-of-rem-layout/">Rem布局的原理解析</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6908879198933221383" title="https://juejin.cn/post/6908879198933221383">8个硬核技巧带你迅速提升CSS技术</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6994678354200756238" title="https://juejin.cn/post/6994678354200756238">你不可能知道的骨架屏玩法</a></li>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+&#x2F;&#x2F; 偶数 &amp; 1 &#x3D; 0
+&#x2F;&#x2F; 奇数 &amp; 1 &#x3D; 1
+console.log(2 &amp; 1)    &#x2F;&#x2F; 0
+console.log(3 &amp; 1)    &#x2F;&#x2F; 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="2">
+<li>使用<code>~, &gt;&gt;, &lt;&lt;, &gt;&gt;&gt;, |</code>来取整</li>
 </ol>
-<h3 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://github.com/vuejs/rfcs" title="https://github.com/vuejs/rfcs">Vue RFCs</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.vue3js.cn/docs/zh/guide/introduction.html" title="https://www.vue3js.cn/docs/zh/guide/introduction.html">Vue3中文文档</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904191744278542" title="https://juejin.cn/post/6844904191744278542">如何参加开源项目-如何给Vue3.0提PR</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6987349513836953607" title="https://juejin.cn/post/6987349513836953607">史上最全 Vue 前端代码风格指南</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/7007710727725121566" title="https://juejin.cn/post/7007710727725121566">101张脑图，从零开始学完Vue3（包括Vue3.2最新语法）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/cuixiaorui/mini-vue" title="https://github.com/cuixiaorui/mini-vue">实现最简 vue3 模型</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6911897255087702030" title="https://juejin.cn/post/6911897255087702030">[Vue官方教程笔记]- 尤雨溪手写mini-vue</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904150082256903" title="https://juejin.cn/post/6844904150082256903">10分钟体验Vue3全家桶(Vue3 + VueRouter4 + Vuex4)</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/7022137486407106591" title="https://juejin.cn/post/7022137486407106591">10.23尤雨溪在早早聊直播分享总结：vue3生态发展现状和展望</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6926822933721513998" title="https://juejin.cn/post/6926822933721513998">2021必知必会的vite+vue3项目最佳实践</a></li>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+console.log(~~ 6.83)    &#x2F;&#x2F; 6
+console.log(6.83 &gt;&gt; 0)  &#x2F;&#x2F; 6
+console.log(6.83 &lt;&lt; 0)  &#x2F;&#x2F; 6
+console.log(6.83 | 0)   &#x2F;&#x2F; 6
+&#x2F;&#x2F; &gt;&gt;&gt;不可对负数取整
+console.log(6.83 &gt;&gt;&gt; 0)   &#x2F;&#x2F; 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="3">
+<li>使用<code>^</code>来完成值交换</li>
 </ol>
-<h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903975112671239" title="https://juejin.cn/post/6844903975112671239">这可能是最通俗的 React Fiber(时间分片) 打开方式</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6950063294270930980" title="https://juejin.cn/post/6950063294270930980">React全部api解读+基础实践大全(夯实基础2万字总结)</a></li>
-<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/WUVVpEoXdhVOlwtjgpLX5A" title="https://mp.weixin.qq.com/s/WUVVpEoXdhVOlwtjgpLX5A">公众号| React Concurrent Mode 初识&amp;探秘</a></li>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+var a &#x3D; 5
+var b &#x3D; 8
+a ^&#x3D; b
+b ^&#x3D; a
+a ^&#x3D; b
+console.log(a)   &#x2F;&#x2F; 8
+console.log(b)   &#x2F;&#x2F; 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="4">
+<li>使用<code>&amp;, &gt;&gt;, |</code>来完成rgb值和16进制颜色值之间的转换</li>
 </ol>
-<h3 id="TS"><a href="#TS" class="headerlink" title="TS"></a>TS</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6926794697553739784" title="https://juejin.cn/post/6926794697553739784">TypeScript 高级用法</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904184894980104" title="https://juejin.cn/post/6844904184894980104">一文读懂 TypeScript 泛型及应用</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6872111128135073806" title="https://juejin.cn/post/6872111128135073806">一份不可多得的 TS 学习指南（1.8W字）</a></li>
-</ol>
-<h3 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904116972421128" title="https://juejin.cn/post/6844904116972421128">http缓存机制</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904119136698381" title="https://juejin.cn/post/6844904119136698381">从0到1搭建前端异常监控系统</a></li>
-<li><a target="_blank" rel="noopener" href="https://learngitbranching.js.org/?demo=&locale=zh_CN" title="https://learngitbranching.js.org/?demo=&amp;locale=zh_CN">可视化Git</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/7016911648656982024" title="https://juejin.cn/post/7016911648656982024">字节跳动是如何落地微前端的</a></li>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/386607009" title="https://zhuanlan.zhihu.com/p/386607009">迈入现代 Web 开发</a></li>
-<li><a target="_blank" rel="noopener" href="https://yjhjstz.gitbooks.io/deep-into-node/content/" title="https://yjhjstz.gitbooks.io/deep-into-node/content/">深入理解Node.js</a></li>
-</ol>
-<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600" title="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰的Git教程</a></li>
-<li><a target="_blank" rel="noopener" href="http://marklodato.github.io/visual-git-guide/index-zh-cn.html" title="http://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解Git</a></li>
-<li><a target="_blank" rel="noopener" href="https://learngitbranching.js.org/?demo=&locale=zh_CN" title="https://learngitbranching.js.org/?demo=&amp;locale=zh_CN">可视化Git</a></li>
-</ol>
-<h3 id="开发小技巧"><a href="#开发小技巧" class="headerlink" title="开发小技巧"></a>开发小技巧</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6986485485765918733" title="https://juejin.cn/post/6986485485765918733">让你 vscode 写代码效率更高的技巧</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6992024002113847332" title="https://juejin.cn/post/6992024002113847332">前端 debug 的奇淫技巧</a></li>
-</ol>
-<h3 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903896637259784" title="https://juejin.cn/post/6844903896637259784">一个合格(优秀)的前端都应该阅读这些文章</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6986436944913924103" title="https://juejin.cn/post/6986436944913924103">专有钉钉前端面试指南</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903776512393224" title="https://juejin.cn/post/6844903776512393224">中高级前端大厂面试秘籍，为你保驾护航金三银四，直通大厂(上)</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903928442667015" title="https://juejin.cn/post/6844903928442667015">面试分享：两年工作经验成功面试阿里P6总结</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904115428917255" title="https://juejin.cn/post/6844904115428917255">写给女朋友的中级前端面试秘籍（含详细答案，15k级别）</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903809206976520" title="https://juejin.cn/post/6844903809206976520">「中高级前端面试」JavaScript手写代码无敌秘籍</a></li>
-<li><a target="_blank" rel="noopener" href="https://yuchengkai.cn/" title="https://yuchengkai.cn/">Github| 前端进阶之道</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/haizlin/fe-interview" title="https://github.com/haizlin/fe-interview">Github| 前端3+1面试题库</a></li>
-</ol>
-<h3 id="行业杂谈"><a href="#行业杂谈" class="headerlink" title="行业杂谈"></a>行业杂谈</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://jishuin.proginn.com/p/763bfbd6fe5f" title="https://jishuin.proginn.com/p/763bfbd6fe5f">2021 年 JavaScript 大事记</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/7007048306438176799" title="https://juejin.cn/post/7007048306438176799">谈谈我这些年对前端框架的理解</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/34892985/answer/60466608" title="https://www.zhihu.com/question/34892985/answer/60466608">jQuery会过时吗？</a></li>
-</ol>
-<h3 id="工程化"><a href="#工程化" class="headerlink" title="工程化"></a>工程化</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6910014283707318279" title="https://juejin.cn/post/6910014283707318279">vite工程化实践，建议收藏</a></li>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/386607009" title="https://zhuanlan.zhihu.com/p/386607009">迈入现代 Web 开发</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6982215543017193502" title="https://juejin.cn/post/6982215543017193502">前端工程化实战 - 企业级 CLI 开发</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6892003555818143752" title="https://juejin.cn/post/6892003555818143752">手把手带你入门前端工程化</a></li>
-</ol>
-<h3 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6981673766178783262" title="https://juejin.cn/post/6981673766178783262">浏览器的渲染写给中高级前端关于性能优化的9大策略和6大指标</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6911472693405548557" title="https://juejin.cn/post/6911472693405548557">聊一聊前端性能优化</a></li>
-</ol>
-<h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/9666.html" title="https://coolshell.cn/articles/9666.html">浏览器的渲染原理间接</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/" title="https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/">浏览器的工作原理</a></li>
-<li><a target="_blank" rel="noopener" href="https://developers.google.com/web/updates/2018/09/inside-browser-part1" title="https://developers.google.com/web/updates/2018/09/inside-browser-part1">现代浏览器工作原理 (part 1)</a></li>
-<li><a target="_blank" rel="noopener" href="https://developers.google.com/web/updates/2018/09/inside-browser-part2" title="https://developers.google.com/web/updates/2018/09/inside-browser-part2">现代浏览器工作原理 (part 2)</a></li>
-<li><a target="_blank" rel="noopener" href="https://developers.google.com/web/updates/2018/09/inside-browser-part3" title="https://developers.google.com/web/updates/2018/09/inside-browser-part3">现代浏览器工作原理 (part 3)</a></li>
-<li><a target="_blank" rel="noopener" href="https://developers.google.com/web/updates/2018/09/inside-browser-part4" title="https://developers.google.com/web/updates/2018/09/inside-browser-part4">现代浏览器工作原理 (part 4)</a></li>
-<li><a target="_blank" rel="noopener" href="https://docs.google.com/presentation/d/1boPxbgNrTU0ddsc144rcXayGA_WF53k96imRH8Mp34Y/edit#slide=id.g60f92a5151_40_1445" title="https://docs.google.com/presentation/d/1boPxbgNrTU0ddsc144rcXayGA_WF53k96imRH8Mp34Y/edit#slide=id.g60f92a5151_40_1445">Life of a Pixel</a></li>
-</ol>
-<h3 id="小程序"><a href="#小程序" class="headerlink" title="小程序"></a>小程序</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903670589423623" title="https://juejin.cn/post/6844903670589423623">近两万字小程序攻略发布了</a></li>
-</ol>
-<h3 id="算法数据结构"><a href="#算法数据结构" class="headerlink" title="算法数据结构"></a>算法数据结构</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://visualgo.net/zh" title="https://visualgo.net/zh">可视化算法</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.yuque.com/wubinhp/uxiv5i" title="https://www.yuque.com/wubinhp/uxiv5i">语雀| 设计模式</a></li>
-</ol>
-<h2 id="二、视频"><a href="#二、视频" class="headerlink" title="二、视频"></a>二、视频</h2><h3 id="JS-1"><a href="#JS-1" class="headerlink" title="JS"></a>JS</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://ke.qq.com/course/231577?taid=2841395744442521" title="https://ke.qq.com/course/231577?taid=2841395744442521">Web前端开发JavaScript权威课堂</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1kf4y1U7Ln?from=search&seid=2734638953578049157" title="https://www.bilibili.com/video/BV1kf4y1U7Ln?from=search&amp;seid=2734638953578049157">2分钟了解 JavaScript Event Loop</a></li>
-<li><a target="_blank" rel="noopener" href="https://ke.qq.com/course/421133?taid=3532215464389901" title="https://ke.qq.com/course/421133?taid=3532215464389901">ES6经典入门到进阶</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vh411Z7QG" title="https://www.bilibili.com/video/BV1vh411Z7QG">8分钟带你了解JS运行原理</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1y3411r71u?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV1y3411r71u?spm_id_from=333.999.0.0">天天造轮子-防抖节流</a></li>
-</ol>
-<h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17W41137jn?from=search&seid=14022360126928211379" title="https://www.bilibili.com/video/BV17W41137jn?from=search&amp;seid=14022360126928211379">jQuery+Ajax从放弃到知根知底</a></li>
-</ol>
-<h3 id="Vue-1"><a href="#Vue-1" class="headerlink" title="Vue"></a>Vue</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17x411J73h" title="https://www.bilibili.com/video/BV17x411J73h">Vue.js精讲</a></li>
-<li><a target="_blank" rel="noopener" href="https://space.bilibili.com/389008815?spm_id_from=333.788.b_765f7570696e666f.2" title="https://space.bilibili.com/389008815?spm_id_from=333.788.b_765f7570696e666f.2">Vue3快速上手指南-CompositionAPI</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1d4411v7UX?p=1" title="https://www.bilibili.com/video/BV1d4411v7UX?p=1">尤雨溪教你写vue 高级vue教程 源码分析</a></li>
-<li><a target="_blank" rel="noopener" href="https://space.bilibili.com/478692215/channel/detail?cid=194210&ctype=0" title="https://space.bilibili.com/478692215/channel/detail?cid=194210&amp;ctype=0">手把手教你学Vue3</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1my4y1m7sz?p=1" title="https://www.bilibili.com/video/BV1my4y1m7sz?p=1">Composition API + 深度解读</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1az4y127Ga/" title="https://www.bilibili.com/video/BV1az4y127Ga/">React 与 Vue 框架的设计思路大 PK</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Zy4y1J73E?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV1Zy4y1J73E?spm_id_from=333.999.0.0">阮一峰推荐最佳学习 vue3 源码的利器 - mini-vue</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1xy4y1178G?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV1xy4y1178G?spm_id_from=333.999.0.0">8年老前端独家分享阅读 Vue3 源码技巧</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Wh411X7Xp?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV1Wh411X7Xp?spm_id_from=333.999.0.0">【全网首发】Vue3.0光速上手「持续更新中」</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vX4y1K7bQ?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV1vX4y1K7bQ?spm_id_from=333.999.0.0">【备战2021】Vite2 + Vue3项目最佳实践「持续更新中」</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1no4y1k7kJ?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV1no4y1k7kJ?spm_id_from=333.999.0.0">Vue3+Typescript从整合到项目实战</a></li>
-<li><a target="_blank" rel="noopener" href="https://space.bilibili.com/480140591/channel/collectiondetail?sid=30497" title="https://space.bilibili.com/480140591/channel/collectiondetail?sid=30497">Vue DevUI开源指南</a></li>
-</ol>
-<h3 id="React-1"><a href="#React-1" class="headerlink" title="React"></a>React</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1az4y127Ga/" title="https://www.bilibili.com/video/BV1az4y127Ga/">React 与 Vue 框架的设计思路大 PK</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JU4y1E73v?from=search&seid=1480540993076541477" title="https://www.bilibili.com/video/BV1JU4y1E73v?from=search&amp;seid=1480540993076541477">9分钟掌握React Hooks正确认知</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1rK411F7x3" title="https://www.bilibili.com/video/BV1rK411F7x3">你必须要掌握的React知识点</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV14b4y1R7hk" title="https://www.bilibili.com/video/BV14b4y1R7hk">从0到1开发可视化拖拽H5编辑器(React)</a></li>
-</ol>
-<h3 id="Node-1"><a href="#Node-1" class="headerlink" title="Node"></a>Node</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://space.bilibili.com/476967789/channel/detail?cid=136330" title="https://space.bilibili.com/476967789/channel/detail?cid=136330">Web前端会客厅|个人推荐看前9个视频</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1oZ4y1V7tx" title="https://www.bilibili.com/video/BV1oZ4y1V7tx">前端阶段进阶（已完结）</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13s411M7Ab?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV13s411M7Ab?spm_id_from=333.999.0.0">Node.js经典教程</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dV411p7gp" title="https://www.bilibili.com/video/BV1dV411p7gp">手写webpack</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Df4y1n777?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV1Df4y1n777?spm_id_from=333.999.0.0">然叔天天造轮子-Vite</a></li>
-</ol>
-<h3 id="JS引擎"><a href="#JS引擎" class="headerlink" title="JS引擎"></a>JS引擎</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1zV411z7RX" title="https://www.bilibili.com/video/BV1zV411z7RX">8分钟带你了解V8引擎是如何运行JS</a></li>
-</ol>
-<h3 id="学习线路"><a href="#学习线路" class="headerlink" title="学习线路"></a>学习线路</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ZZ4y1H7rU/?spm_id_from=333.788.b_636f6d6d656e74.6" title="https://www.bilibili.com/video/BV1ZZ4y1H7rU/?spm_id_from=333.788.b_636f6d6d656e74.6">前端学习路线分享</a></li>
-</ol>
-<h3 id="面试-1"><a href="#面试-1" class="headerlink" title="面试"></a>面试</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1av411w7oa" title="https://www.bilibili.com/video/BV1av411w7oa">程序员简历点评第二期：能吃苦和能吃</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1g54y1p7yV?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV1g54y1p7yV?spm_id_from=333.999.0.0">现场点评9个程序员简历 – 有喷有夸</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1FB4y1T7CP?spm_id_from=333.999.0.0" title="https://www.bilibili.com/video/BV1FB4y1T7CP?spm_id_from=333.999.0.0">想进大厂？简历要这么写</a></li>
-</ol>
-<h3 id="网站搭建"><a href="#网站搭建" class="headerlink" title="网站搭建"></a>网站搭建</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1rU4y1J785" title="https://www.bilibili.com/video/BV1rU4y1J785">手把手带你从0搭建个人网站，小白可懂的保姆级教程</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.788.recommend_more_video.8" title="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.788.recommend_more_video.8">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a></li>
-</ol>
-<h3 id="浏览器-1"><a href="#浏览器-1" class="headerlink" title="浏览器"></a>浏览器</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av35265997/" title="https://www.bilibili.com/video/av35265997/">像素的一生Life of a Pixel</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1x54y1B7RE/" title="https://www.bilibili.com/video/BV1x54y1B7RE/">浏览器是如何运作的？</a></li>
-</ol>
-<h3 id="小程序-1"><a href="#小程序-1" class="headerlink" title="小程序"></a>小程序</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1y3411i7VK" title="https://www.bilibili.com/video/BV1y3411i7VK">uniCloud开发实战：拍照识别垃圾分类应用 跨端云开发 uniapp </a></li>
-</ol>
-<h2 id="三、书籍"><a href="#三、书籍" class="headerlink" title="三、书籍"></a>三、书籍</h2><h3 id="CSS-1"><a href="#CSS-1" class="headerlink" title="CSS"></a>CSS</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30450258/" title="https://book.douban.com/subject/30450258/">精通 CSS</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2308234/" title="https://book.douban.com/subject/2308234/">CSS 权威指南</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/35021471/" title="https://book.douban.com/subject/35021471/">深入解析 CSS</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26745943/" title="https://book.douban.com/subject/26745943/">CSS 揭秘</a></li>
-</ol>
-<h3 id="JS-2"><a href="#JS-2" class="headerlink" title="JS"></a>JS</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6038371/" title="https://book.douban.com/subject/6038371/">Javascript编程艺术</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10546125/" title="https://book.douban.com/subject/10546125/">JavaScript高级程序设计（第4版）</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10549733/" title="https://book.douban.com/subject/10549733/">Javascript犀牛书第七版</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26351021/" title="https://book.douban.com/subject/26351021/">你不知道的javascript 上</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26854244/" title="https://book.douban.com/subject/26854244/">你不知道的javascript 中</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/35446937/" title="https://book.douban.com/subject/35446937/">Javasript二十年</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/35085910/" title="https://book.douban.com/subject/35085910/">JavaScript语言精髓与编程实践（第3版）</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/35218831/" title="https://book.douban.com/subject/35218831/">前端开发核心知识进阶</a></li>
-</ol>
-<h3 id="Vue-2"><a href="#Vue-2" class="headerlink" title="Vue"></a>Vue</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/32581281/" title="https://book.douban.com/subject/32581281/">深入浅出Vue.js</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/33338290/" title="https://book.douban.com/subject/33338290/">Testing Vue.js Applications</a></li>
-</ol>
-<h3 id="TS-1"><a href="#TS-1" class="headerlink" title="TS"></a>TS</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://ts.xcatliu.com/" title="https://ts.xcatliu.com/">TypeScript 入门教程</a></li>
-<li><a target="_blank" rel="noopener" href="https://jkchao.github.io/typescript-book-chinese/#why" title="https://jkchao.github.io/typescript-book-chinese/#why">深入理解 TypeScript</a></li>
-</ol>
-<h3 id="Node-2"><a href="#Node-2" class="headerlink" title="Node"></a>Node</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://11111-1252105172.cos.ap-shanghai.myqcloud.com/understand-nodejs%EF%BC%88%E5%B8%A6%E6%A0%87%E7%AD%BE%E7%89%88%EF%BC%89.pdf" title="https://11111-1252105172.cos.ap-shanghai.myqcloud.com/understand-nodejs%EF%BC%88%E5%B8%A6%E6%A0%87%E7%AD%BE%E7%89%88%EF%BC%89.pdf">Node源码解析</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25768396/" title="https://book.douban.com/subject/25768396/">深入浅出Node.js(进阶)</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30329536/" title="https://book.douban.com/subject/30329536/">设计数据密集型应用</a></li>
-</ol>
-<h3 id="浏览器-2"><a href="#浏览器-2" class="headerlink" title="浏览器"></a>浏览器</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25910556/" title="https://book.douban.com/subject/25910556/">WebKit 技术内幕</a></li>
-</ol>
-<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/19952400/" title="https://book.douban.com/subject/19952400/">算法（第4版）</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26979890/" title="https://book.douban.com/subject/26979890/">算法图解</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25894685/" title="https://book.douban.com/subject/25894685/">啊哈!算法</a></li>
-<li><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1885170/" title="https://book.douban.com/subject/1885170/">算法导论</a></li>
+<pre class="line-numbers language-none"><code class="language-none">复制代码
+&#x2F;**
+ * 16进制颜色值转RGB
+ * @param  &#123;String&#125; hex 16进制颜色字符串
+ * @return &#123;String&#125;     RGB颜色字符串
+ *&#x2F;
+  function hexToRGB(hex) &#123;
+    var hexx &#x3D; hex.replace(&#39;#&#39;, &#39;0x&#39;)
+    var r &#x3D; hexx &gt;&gt; 16
+    var g &#x3D; hexx &gt;&gt; 8 &amp; 0xff
+    var b &#x3D; hexx &amp; 0xff
+    return &#96;rgb($&#123;r&#125;, $&#123;g&#125;, $&#123;b&#125;)&#96;
+&#125;
+
+&#x2F;**
+ * RGB颜色转16进制颜色
+ * @param  &#123;String&#125; rgb RGB进制颜色字符串
+ * @return &#123;String&#125;     16进制颜色字符串
+ *&#x2F;
+function RGBToHex(rgb) &#123;
+    var rgbArr &#x3D; rgb.split(&#x2F;[^\d]+&#x2F;)
+    var color &#x3D; rgbArr[1]&lt;&lt;16 | rgbArr[2]&lt;&lt;8 | rgbArr[3]
+    return &#39;#&#39;+ color.toString(16)
+&#125;
+&#x2F;&#x2F; -------------------------------------------------
+hexToRGB(&#39;#ffffff&#39;)               &#x2F;&#x2F; &#39;rgb(255,255,255)&#39;
+RGBToHex(&#39;rgb(255,255,255)&#39;)      &#x2F;&#x2F; &#39;#ffffff&#39;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li>https:&#x2F;&#x2F;developer.mozilla.org&#x2F;zh-CN&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Reference&#x2F;Operators&#x2F;Bitwise_Operators</li>
+<li>http:&#x2F;&#x2F;javascript.ruanyifeng.com&#x2F;grammar&#x2F;operator.html</li>
+<li>http:&#x2F;&#x2F;www.w3school.com.cn&#x2F;js&#x2F;js_obj_number.asp</li>
 </ol>
 
                 
@@ -719,7 +660,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://5soros.github.io/2024/04/19/ge-ren-shou-cang-de-qian-duan-xue-xi-zi-liao/">https://5soros.github.io/2024/04/19/ge-ren-shou-cang-de-qian-duan-xue-xi-zi-liao/</a>
+                    <a href="https://5soros.github.io/2024/04/25/wei-yun-suan-fu-zai-js-zhong-de-miao-yong/">https://5soros.github.io/2024/04/25/wei-yun-suan-fu-zai-js-zhong-de-miao-yong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -757,8 +698,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/">
-                                    <span class="chip bg-color">学习资料</span>
+                                <a href="/tags/JS/">
+                                    <span class="chip bg-color">JS</span>
                                 </a>
                             
                         </div>
@@ -932,13 +873,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/04/19/html-biao-qian-qian-tao-gui-ze/">
+                <a href="/2024/04/25/ru-he-pan-duan-yuan-su-shi-fou-zai-ke-shi-qu-yu-nei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="HTML标签嵌套规则">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="如何判断元素是否在可视区域内">
                         
-                        <span class="card-title">HTML标签嵌套规则</span>
+                        <span class="card-title">如何判断元素是否在可视区域内</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -949,7 +890,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-04-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-04-25
                         </span>
                         <span class="publish-author">
                             
@@ -966,8 +907,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">HTML</span>
+                    <a href="/tags/JS/">
+                        <span class="chip bg-color">JS</span>
                     </a>
                     
                 </div>
@@ -981,13 +922,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/04/19/neng-rang-ni-zao-dian-xia-ban-de-36-ge-javascript-shi-yong-han-shu/">
+                <a href="/2024/04/19/js-fang-fa-da-quan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="能让你早点下班的36个JavaScript实用函数">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="JS方法大全">
                         
-                        <span class="card-title">能让你早点下班的36个JavaScript实用函数</span>
+                        <span class="card-title">JS方法大全</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
