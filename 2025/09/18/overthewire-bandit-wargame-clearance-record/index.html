@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于document.body.scrollTop和document.documentElement.scrollTop 值为0的问题, 前端 JS HTML CSS Linux">
+    <meta name="keywords" content="OverTheWire Bandit wargame clearance record, 前端 JS HTML CSS Linux">
     <meta name="description" content="Looking up cases and codes occasionally is convenient, as it allows you to document your experiences and knowledge, enabling you to share and teach others. This process is akin to reviewing the knowledge and acquiring a more profound comprehension of it">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>关于document.body.scrollTop和document.documentElement.scrollTop 值为0的问题 | Alan Work&#39;s Notes</title>
+    <title>OverTheWire Bandit wargame clearance record | Alan Work&#39;s Notes</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">关于document.body.scrollTop和document.documentElement.scrollTop 值为0的问题</h1>
+                    <h1 class="description center-align post-title">OverTheWire Bandit wargame clearance record</h1>
                 </div>
             </div>
         </div>
@@ -431,8 +431,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JS/">
-                                <span class="chip bg-color">JS</span>
+                            <a href="/tags/CTF/">
+                                <span class="chip bg-color">CTF</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%B8%97%E9%80%8F/">
+                                <span class="chip bg-color">渗透</span>
                             </a>
                         
                     </div>
@@ -443,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/web%E5%89%8D%E7%AB%AF/" class="post-category">
-                                web前端
+                            <a href="/categories/linux/" class="post-category">
+                                linux
                             </a>
                         
                     </div>
@@ -456,28 +460,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-01-25
+                    2025-09-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-01-25
+                    2025-09-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    10 分
                 </div>
                 
 
@@ -500,96 +504,172 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、先遇到document-body-scrollTop值为0的问题"><a href="#一、先遇到document-body-scrollTop值为0的问题" class="headerlink" title="一、先遇到document.body.scrollTop值为0的问题"></a>一、先遇到document.body.scrollTop值为0的问题</h2><p>做页面的时候可能会用到位置固定的层,读取document.body.scrollTop来设置层的位置,像这样,</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">window<span class="token punctuation">.</span><span class="token function-variable function">onscroll</span><span class="token operator">=</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
- <span class="token keyword">var</span> oId<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementByIdx_x</span><span class="token punctuation">(</span><span class="token string">"id"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
- oId<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top<span class="token operator">=</span>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop<span class="token operator">+</span><span class="token string">"px"</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+                <p><a target="_blank" rel="noopener" href="https://overthewire.org/wargames">https://overthewire.org/wargames</a></p>
+<p>Level 0<br>账号密码都在网页直接给出了</p>
+<h3 id="Level-0-→-Level-1"><a href="#Level-0-→-Level-1" class="headerlink" title="Level 0 → Level 1"></a>Level 0 → Level 1</h3><p>按页面提示，以SSH，账号，密码都是bandit0链接服务器，下一关密码直接在&#x2F;home&#x2F;bandit0&#x2F;readme里面<br>密码：ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If</p>
+<h3 id="Level-1-→-Level-2"><a href="#Level-1-→-Level-2" class="headerlink" title="Level 1 → Level 2"></a>Level 1 → Level 2</h3><p>以 bandit1 和密码 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If 登录<br>按页面提示，文件在&#x2F;home目录里面，<br><code>find . -name readme 2&gt;/dev/null</code><br><code>2&gt;/dev/null</code> 是一个让报错不显示的写法<br>试了一下，要不是没权限的文件，要不就是上一关的文件<br>看到一个名为“-”的文件，用的SSH终端是windterm，直接打开来看：<br>263JGJPfgU6LtdEvgfWU1XP5yac29mFx</p>
+<h3 id="Level-2-→-Level-3"><a href="#Level-2-→-Level-3" class="headerlink" title="Level 2 → Level 3"></a>Level 2 → Level 3</h3><p>以 bandit2 和密码 263JGJPfgU6LtdEvgfWU1XP5yac29mFx 登录<br>按页面提示的文件名，</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> ./<span class="token string">'--spaces in this filename--'</span> 
+或者 
+<span class="token function">cat</span> <span class="token string">'./--spaces in this filename--'</span>
+或者
+<span class="token function">cat</span> -- <span class="token parameter variable">--spaces</span> <span class="token keyword">in</span> this filename--<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>获得密码<br>MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx</p>
+<h3 id="Level-3-→-Level-4"><a href="#Level-3-→-Level-4" class="headerlink" title="Level 3 → Level 4"></a>Level 3 → Level 4</h3><p>bandit3 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx登录<br>按页面提示的目录名<br><code>cat &#39;/home/bandit3/inhere/...Hiding-From-You&#39;</code></p>
+<p>获得密码：2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ</p>
+<h3 id="Level-4-→-Level-5"><a href="#Level-4-→-Level-5" class="headerlink" title="Level 4 → Level 5"></a>Level 4 → Level 5</h3><p>bandit4 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ<br>按页面提示：下一关的密码存储在inhere目录中唯一一个人类可读的文件中<br><code>cd inhere </code><br>由于看到的文件名都使用了“-”开头，使用命令打印第一行看看：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">file</span> <span class="token keyword">in</span> *<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">$file</span>"</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token function">head</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> -- <span class="token string">"<span class="token variable">$file</span>"</span><span class="token punctuation">;</span> <span class="token keyword">done</span>
+<span class="token comment"># 或者</span>
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-type</span> f <span class="token parameter variable">-exec</span> <span class="token function">head</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> +
+<span class="token comment"># 寻找，本目录，-type f （普通文件），head -n 1（第一行），&#123;&#125; 是 find 的占位符，代表当前找到的文件路径，+ 是find -exec的一种结尾形式，</span>
+<span class="token comment"># 用 \;结尾：简单直观，但对每个文件都要启动一次命令，效率低（特别是几千几万个文件时）。</span>
+<span class="token comment"># 用 +：更高效，能减少进程数量。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>获得密码：4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw</p>
+<h3 id="Level-5-→-Level-6"><a href="#Level-5-→-Level-6" class="headerlink" title="Level 5 → Level 6"></a>Level 5 → Level 6</h3><p>bandit5 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw<br>按照页面提示：<br>·inhere目录下<br>·人类可读<br>·大小为 1033 字节<br>·权限是不可执行<br>尝试：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> inhere <span class="token operator">&amp;&amp;</span> <span class="token function">ls</span> <span class="token parameter variable">-a</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>发现好多目录，继续：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-type</span> f <span class="token parameter variable">-size</span> 1033c
+出来好多文件，继续加限制条件：
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-type</span> f <span class="token parameter variable">-size</span> 1033c <span class="token operator">!</span> <span class="token parameter variable">-perm</span> /111 <span class="token parameter variable">-exec</span> <span class="token function">cat</span> -- <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> +
+<span class="token comment"># 或者</span>
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-type</span> f <span class="token parameter variable">-size</span> 1033c <span class="token operator">!</span> <span class="token parameter variable">-perm</span> /111 <span class="token parameter variable">-exec</span> <span class="token function">sh</span> <span class="token parameter variable">-c</span> <span class="token string">'
+# 用 sh -c 包一层，就可以在 -exec ... + 里写循环
+  for file do
+    printf "%s:\n" "$file"
+    head -n 5 -- "$file"
+    echo "----------------"
+  done
+'</span> <span class="token function">sh</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> +<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>可是怎么没有达到预期效果呢,输出document.body.scrollTop的值一看,一直都是0.原来是DTD的问题,要是页面直接用开头的话就没有问题了.但是要符合web标准,DTD当然是不能少的.使用DTD时用document.documentElement.scrollTop代替document.body.scrollTop就可以了</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">window<span class="token punctuation">.</span><span class="token function-variable function">onscroll</span><span class="token operator">=</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-   <span class="token keyword">var</span> oId<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementByIdx_x</span><span class="token punctuation">(</span><span class="token string">"id"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-   oId<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top<span class="token operator">=</span>document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token operator">+</span><span class="token string">"px"</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>或者用函数来解决：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">get_scrollTop_of_body</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">var</span> scrollTop<span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> window<span class="token punctuation">.</span>pageYOffset <span class="token operator">!=</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">//pageYOffset指的是滚动条顶部到网页顶部的距离</span>
-        scrollTop <span class="token operator">=</span> window<span class="token punctuation">.</span>pageYOffset<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> document<span class="token punctuation">.</span>compatMode <span class="token operator">!=</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> document<span class="token punctuation">.</span>compatMode <span class="token operator">!=</span> <span class="token string">'BackCompat'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        scrollTop <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> document<span class="token punctuation">.</span>body <span class="token operator">!=</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        scrollTop <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    <span class="token keyword">return</span> scrollTop<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>window.pageYoffset:<br>pageYOffset 属性是 scrollY 属性的别名：</p>
-<p><code>window.pageYOffset == window.scrollY; // 总是返回 true</code></p>
-<p>为了跨浏览器兼容，请使用 window.pageYOffset 代替 window.scrollY。另外，旧版本 IE（&lt;9）两个属性都不支持，必须使用其他的非标准属性。完整的兼容性代码如下：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> supportPageOffset <span class="token operator">=</span> window<span class="token punctuation">.</span>pageXOffset <span class="token operator">!==</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> isCSS1Compat <span class="token operator">=</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>compatMode <span class="token operator">||</span> <span class="token string">""</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">"CSS1Compat"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">var</span> x <span class="token operator">=</span> supportPageOffset
-  <span class="token operator">?</span> window<span class="token punctuation">.</span>pageXOffset
-  <span class="token operator">:</span> isCSS1Compat
-    <span class="token operator">?</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft
-    <span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">;</span>
-<span class="token keyword">var</span> y <span class="token operator">=</span> supportPageOffset
-  <span class="token operator">?</span> window<span class="token punctuation">.</span>pageYOffset
-  <span class="token operator">:</span> isCSS1Compat
-    <span class="token operator">?</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop
-    <span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>所有主流浏览器都支持 pageXOffset 和 pageYOffset 属性。<br>注：IE对盒模型的渲染在 <strong>Standards Mode</strong>和<strong>Quirks Mode</strong>是有很大差别的，在Standards Mode下对于盒模型的解释和其他的标准浏览器是一样，但在Quirks Mode模式下则有很大差别，而在不声明Doctype的情况下，IE默认又是Quirks Mode。所以为兼容性考虑，我们可能需要获取当前的文档渲染方式。</p>
-<p>document.compatMode正好派上用场，它有两种可能的返回值：<strong>BackCompat</strong>和<strong>CSS1Compat</strong>，对其解释如下：</p>
-<p>BackCompat： Standards-compliant mode is not switched on. (Quirks Mode)</p>
-<p>CSS1Compat： Standards-compliant mode is switched on. (Standards Mode)</p>
-<p>在实际的项目中，我们还需要在获取浏览是否IE，这样就可以得到IE的渲染模式了。</p>
-<p>当文档有了标准声明时， document.compatMode 的值就等于 “CSS1compat”， 因此，我们可以根据 document.compatMode 的值来判断文档是否加了标准声明：</p>
-<p>var height &#x3D; document.compatMode&#x3D;&#x3D;”CSS1Compat” ? document.documentElement.clientHeight : document.body.clientHeight;</p>
-<h2 id="二、再次遇到谷歌浏览器不支持document-documentElement-scrollTop，值0的问题"><a href="#二、再次遇到谷歌浏览器不支持document-documentElement-scrollTop，值0的问题" class="headerlink" title="二、再次遇到谷歌浏览器不支持document.documentElement.scrollTop，值0的问题"></a>二、再次遇到谷歌浏览器不支持document.documentElement.scrollTop，值0的问题</h2><ul>
-<li><p>信息显示浮动层时，IE、Firefox下都能显示正常，但Chrome下出现了浮动层永远显示在上面，经过仔细分析，发现Chrome对document.documentElement.scrollTop的识别会出现误差。不过加上document.body.scrollTop后，则显示正常。<br><br>  由于document.documentElement.scrollTop和document.body.scrollTop在标准模式或者是奇怪模式下都只有一个会返回有效的值，所以都加上也不会有问题（看来上面的问题是Chrome可能把文档当作非标准文档来解析了）。</p>
-<p>  即获取高度时使用document.documentElement.scrollTop+document.body.scrollTop，经测试，代码在IE、Firefox、Chrome下都能显示正常了。</p>
-</li>
-</ul>
-<h2 id="三、浏览器兼容模式"><a href="#三、浏览器兼容模式" class="headerlink" title="三、浏览器兼容模式"></a>三、浏览器兼容模式</h2><ul>
-<li><p>对于document.compatMode，很多朋友可能都根我一样很少接触，知道他的存在却不清楚他的用途。今天在ext中看到 document.compatMode的使用，感觉这个对于我们开发兼容性的web页面还是很有帮助，我们都知道，IE对盒模型的渲染在 Standards Mode和Quirks Mode是有很大差别的，在Standards Mode下对于盒模型的解释和其他的标准浏览器是一样，但在Quirks Mode模式下则有很大差别，而在不声明Doctype的情况下，IE默认又是Quirks Mode。所以为兼容性考虑，我们可能需要获取当前的文档渲染方式。<br><br>      document.compatMode正好派上用场，它有两种可能的返回值：BackCompat和CSS1Compat，对其解释如下：</p>
-<p>BackCompat Standards-compliant mode is not switched on. (Quirks Mode)</p>
-<p>CSS1Compat Standards-compliant mode is switched on. (Standards Mode)</p>
-<p>    在实际的项目中，我们还需要在获取浏览是否IE，这样就可以得到IE的渲染模式了。在Ext中的代码：isBorderBox&#x3D;isIE&amp;&amp;!isStrict。</p>
-<p>当文档有了标准声明时， document.compatMode 的值就等于 “CSS1compat”， 因此， 我们可以根据 document.compatMode 的值来判断文档是否加了标准声明</p>
-<p>var height &#x3D; document.compatMode&#x3D;&#x3D;”CSS1Compat” ? document.documentElement.clientHeight : document.body.clientHeight;</p>
-</li>
-<li><p>=&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;模式应用&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
-<p>document.compatMode:获取当前浏览器采用的渲染方式。</p>
-<p>主要是浏览器的模式，有两个：BackCompat，CSS1Compat。其中前者是怪异模式，后者是标准模式。</p>
-<p>IE默认是BackCompat模式，Gecko内核的浏览器只在table中图片层上不同，可以看为CSS1Compat标准模式</p>
-<p>document.compatMode等于BackCompat时，浏览器客户区宽度是document.body.clientWidth；</p>
-<p>当document.compatMode等于CSS1Compat时，浏览器客户区宽度是document.documentElement.clientWidth。</p>
-<p>浏览器客户区高度、滚动条高度、滚动条的Left、滚动条的Top等等都是上面的情况。</p>
-<p>一个准确获取网页客户区的宽高、滚动条宽高、滚动条Left和Top的代码：</p>
-</li>
-</ul>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>compatMode <span class="token operator">==</span> \"BackCompat\"<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-cWidth <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>clientWidth<span class="token punctuation">;</span>
-cHeight <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>clientHeight<span class="token punctuation">;</span>
-sWidth <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollWidth<span class="token punctuation">;</span>
-sHeight <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollHeight<span class="token punctuation">;</span>
-sLeft <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">;</span>
-sTop <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>
+<p>获得密码：HWasnPhtq9AVKe0dmk45nxy20cvUa6EG</p>
+<h3 id="Level-6-→-Level-7"><a href="#Level-6-→-Level-7" class="headerlink" title="Level 6 → Level 7"></a>Level 6 → Level 7</h3><p>bandit6 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG</p>
+<p>按照页面提示，密码文件：<br>·归用户 bandit7 所有<br>·归 bandit6 组所有<br>·大小为 33 字节</p>
+<p><code>cd /</code><br><code>find / -type f -user bandit7 -group bandit6 -size 33c 2&gt;/dev/null -exec cat -- &#123;&#125; +</code><br>显示密码为：morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj</p>
+<h3 id="Level-7-→-Level-8"><a href="#Level-7-→-Level-8" class="headerlink" title="Level 7 → Level 8"></a>Level 7 → Level 8</h3><p>bandit7 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj</p>
+<p>按照页面提示：<br>下一关的密码存储在文件data.txt中，位于单词millionth旁边</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-name</span> <span class="token string">'data.txt'</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token parameter variable">-print0</span> <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token parameter variable">-0</span> <span class="token function">grep</span> <span class="token parameter variable">-Hn</span> <span class="token string">'millionth'</span>
+或用更少的做法
+<span class="token function">grep</span> <span class="token parameter variable">-Hn</span> <span class="token string">'millionth'</span>  ./data.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>显示密码为：dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc</p>
+<h3 id="Level-8-→-Level-9"><a href="#Level-8-→-Level-9" class="headerlink" title="Level 8 → Level 9"></a>Level 8 → Level 9</h3><p>bandit8 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc<br>按照页面提示：<br>下一关的密码存储在文件data.txt中，密码是某行字符在文件中只出现过一次，而其他行都有重复的<br>则，排序（sort），输出出现一次的行（uniq -u）：<br><code>sort data.txt | uniq -u</code></p>
+<h3 id="Level-9-→-Level-10"><a href="#Level-9-→-Level-10" class="headerlink" title="Level 9 → Level 10"></a>Level 9 → Level 10</h3><p>bandit9 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM</p>
+<p>按照页面提示：<br>下一关的密码存储在文件data.txt中，密码是以一些‘&#x3D;’开头的</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">grep</span> ^<span class="token operator">==</span><span class="token string">' ./data.txt  # 没有回显，查文件类型
+file data # 显示data.txt: data 文件为2进制文件
+grep -Hn '</span>^<span class="token operator">=</span>*<span class="token string">'  ./data.txt # 显示 grep: ./data.txt: binary file matches
+strings data.txt | grep '</span>^<span class="token operator">==</span>*'  <span class="token comment"># 显示密码为：FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>strings命令是在对象文件或二进制文件中查找可打印的字符串</p>
+<h3 id="Level-10-→-Level-11"><a href="#Level-10-→-Level-11" class="headerlink" title="Level 10 → Level 11"></a>Level 10 → Level 11</h3><p>bandit10 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey</p>
+<p>按照页面提示：<br>下一关的密码存储在文件data.txt中，密码是以base64编码的（文件总共就一行，是base64编码）<br><code>cat data.txt | base64 -d</code><br>（居然有base64的命令，我以前没听说过，本来想复制到浏览器解码的）<br>显示 The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr</p>
+<h3 id="Level-11-→-Level-12"><a href="#Level-11-→-Level-12" class="headerlink" title="Level 11 → Level 12"></a>Level 11 → Level 12</h3><p>bandit11  dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr</p>
+<p>按照页面提示：<br>下一关的密码存储在文件data.txt中，密码是由字母偏移13位而加密成的（即a变n，b变o）<br>由于字母表共26个字母，13恰好是在中间，则无论向前或后偏移都是一样</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">rot13</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[A-Za-z]</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">char</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// 对 str 进行 全局（/g 返回每一次匹配的结果，如无/g这只会返回第一个字母）调用 function(char)，即把没一个字母分次传入char函数</span>
+        <span class="token keyword">let</span> code <span class="token operator">=</span> char<span class="token punctuation">.</span><span class="token function">charCodeAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 每次传入的char是一个长度为1的字符串（单个字符），它的索引只有0</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>code <span class="token operator">>=</span> <span class="token number">65</span> <span class="token operator">&amp;&amp;</span> code <span class="token operator">&lt;=</span> <span class="token number">90</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// 如果是大写字母（根据大写字母的ASCII码元）</span>
+        <span class="token comment">// code - 65：将字母转换为0-25的索引，方便计算（A=0, Z=25），因为A的ASCII码元是65，从A开始算</span>
+        <span class="token comment">// + 13：向后数13位。</span>
+        <span class="token comment">// % 26：模26确保索引在0-25范围内，因为字母表是循环的：Z（索引25）向后13位是M（索引12）</span>
+        <span class="token comment">// + 65：转回ASCII码，生成新的大写字母。</span>
+        <span class="token comment">// 小写字母类似</span>
+            <span class="token keyword">return</span> String<span class="token punctuation">.</span><span class="token function">fromCharCode</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>code <span class="token operator">-</span> <span class="token number">65</span> <span class="token operator">+</span> <span class="token number">13</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">26</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">65</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>code <span class="token operator">>=</span> <span class="token number">97</span> <span class="token operator">&amp;&amp;</span> code <span class="token operator">&lt;=</span> <span class="token number">122</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> String<span class="token punctuation">.</span><span class="token function">fromCharCode</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>code <span class="token operator">-</span> <span class="token number">97</span> <span class="token operator">+</span> <span class="token number">13</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">26</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">97</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">return</span> char<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
-<span class="token keyword">else</span> <span class="token punctuation">&#123;</span> <span class="token comment">//document.compatMode == \"CSS1Compat\"</span>
-cWidth <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientWidth<span class="token punctuation">;</span>
-cHeight <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHeight<span class="token punctuation">;</span>
-sWidth <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollWidth<span class="token punctuation">;</span>
-sHeight <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollHeight<span class="token punctuation">;</span>
-sLeft <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">?</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft <span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">;</span>
-sTop <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">?</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop <span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">rot13</span><span class="token punctuation">(</span><span class="token string">"Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>输出：The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4</p>
+<h3 id="Level-12-→-Level-13"><a href="#Level-12-→-Level-13" class="headerlink" title="Level 12 → Level 13"></a>Level 12 → Level 13</h3><p>bandit12 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4<br>不多说，看代码，这关卡真是能折腾人，压缩套了好多层</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">bandit12@bandit:~$ mktemp <span class="token parameter variable">-d</span>  <span class="token comment"># 生成临时目录</span>
+/tmp/tmp.FonipETdmj
+bandit12@bandit:~$ <span class="token builtin class-name">cd</span> /tmp/tmp.FonipETdmj
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">cp</span> ~/data.txt <span class="token builtin class-name">.</span>
+<span class="token comment"># 按照页面提示，密码文件是十六进制，必须还原成原始二进制，经查，linux系统有xxd小工具可以转换</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ xxd <span class="token parameter variable">-r</span> data.txt <span class="token operator">></span> data.bin
+<span class="token comment"># 转换完了看看是什么东西，原来是gzip压缩</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">file</span> data.bin
+data.bin: <span class="token function">gzip</span> compressed data, was <span class="token string">"data2.bin"</span>, last modified: Fri Aug <span class="token number">15</span> <span class="token number">13</span>:15:53 <span class="token number">2025</span>, max compression, from Unix, original size modulo <span class="token number">2</span>^32 <span class="token number">584</span>
+<span class="token comment"># 由于不正确的文件后缀不能被压缩软件识别，所以要改名</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">mv</span> data.bin data.gz
+<span class="token comment"># 解压看看</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ gunzip data.gz
+<span class="token comment"># 解压出来一个data，用file看看是什么东西</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">file</span> data
+data: <span class="token function">bzip2</span> compressed data, block size <span class="token operator">=</span> 900k
+<span class="token comment"># 一直重复以上步骤</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">mv</span> data data.bz2
+bandit12@bandit:/tmp/tmp.FonipETdmj$ bunzip2 data.bz2
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">ls</span>
+data  data.txt
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">file</span> data
+data: <span class="token function">gzip</span> compressed data, was <span class="token string">"data4.bin"</span>, last modified: Fri Aug <span class="token number">15</span> <span class="token number">13</span>:15:53 <span class="token number">2025</span>, max compression, from Unix, original size modulo <span class="token number">2</span>^32 <span class="token number">20480</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">mv</span> data data.gz
+bandit12@bandit:/tmp/tmp.FonipETdmj$ gunzip data.gz
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">file</span> data
+data: POSIX <span class="token function">tar</span> archive <span class="token punctuation">(</span>GNU<span class="token punctuation">)</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">mv</span> data data.tar
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">tar</span> <span class="token parameter variable">-xf</span> data.tar
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">ls</span>
+data5.bin  data.tar  data.txt
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">file</span> data5.bin
+data5.bin: POSIX <span class="token function">tar</span> archive <span class="token punctuation">(</span>GNU<span class="token punctuation">)</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">tar</span> <span class="token parameter variable">-xf</span> data5.bin
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">ls</span>
+data5.bin  data6.bin  data.tar  data.txt
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">file</span> data6.bin
+data6.bin: <span class="token function">bzip2</span> compressed data, block size <span class="token operator">=</span> 900k
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">mv</span> data6.bin data6.bz2
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">ls</span>
+data5.bin  data6.bz2  data.tar  data.txt
+bandit12@bandit:/tmp/tmp.FonipETdmj$ bunzip2 data6.bz2
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">ls</span>
+data5.bin  data6  data.tar  data.txt
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">file</span> data6
+data6: POSIX <span class="token function">tar</span> archive <span class="token punctuation">(</span>GNU<span class="token punctuation">)</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">mv</span> data6 data6.tar
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">ls</span>
+data5.bin  data6.tar  data.tar  data.txt
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">tar</span> <span class="token parameter variable">-xf</span> data6.tar
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">ls</span>
+data5.bin  data6.tar  data8.bin  data.tar  data.txt
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">file</span> data8.bin
+data8.bin: <span class="token function">gzip</span> compressed data, was <span class="token string">"data9.bin"</span>, last modified: Fri Aug <span class="token number">15</span> <span class="token number">13</span>:15:53 <span class="token number">2025</span>, max compression, from Unix, original size modulo <span class="token number">2</span>^32 <span class="token number">49</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">mv</span> data8.bin data8.gz
+bandit12@bandit:/tmp/tmp.FonipETdmj$ gunzip data8.gz
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">ls</span>
+data5.bin  data6.tar  data8  data.tar  data.txt
+<span class="token comment"># 凭直觉file一个, 终于看到text文件了</span>
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">file</span> data8
+data8: ASCII text
+bandit12@bandit:/tmp/tmp.FonipETdmj$ <span class="token function">cat</span> data8
+The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>原文：<a target="_blank" rel="noopener" href="http://blog.csdn.net/gongyuan303/article/details/8935307">http://blog.csdn.net/gongyuan303/article/details/8935307</a></p>
 
+<h3 id="Level-13-→-Level-14"><a href="#Level-13-→-Level-14" class="headerlink" title="Level 13 → Level 14"></a>Level 13 → Level 14</h3><p>bandit13 FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn<br>按照页面提示，没有密码文件，只有ssh key<br>登录<code>cd ls</code> <code>cat xxxxxxxxxx</code> 把ssh key复制下来随便保存</p>
+<h3 id="Level-14-→-Level-15"><a href="#Level-14-→-Level-15" class="headerlink" title="Level 14 → Level 15"></a>Level 14 → Level 15</h3><p>bandit14  ssh key登录<br>按上一关的提示，直接打开</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> /etc/bandit_pass/bandit14<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>获得Level 14（本关）的登录密码：MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS<br>按网页提示，给本地端口30000發这个字符串，来获得下一关的密码<br><code>nc localhost 30000</code>回车，再粘贴密码，回车</p>
+<p>显示：Correct!<br>8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo</p>
+<h3 id="Level-15-→-Level-16"><a href="#Level-15-→-Level-16" class="headerlink" title="Level 15 → Level 16"></a>Level 15 → Level 16</h3><p>bandit15  8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo</p>
+<p>网页上说：通过使用 SSL&#x2F;TLS 加密将当前级别的密码提交到localhost 上的端口 30001，可以检索下一级别的密码</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">bandit14@bandit:~$ openssl s_client <span class="token parameter variable">-connect</span> localhost:30001
+<span class="token comment"># 回车</span>
+<span class="token comment"># 粘贴：8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo </span>
+<span class="token comment"># 回车</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Correct!<br>kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx</p>
+<h3 id="Level-16-→-Level-17"><a href="#Level-16-→-Level-17" class="headerlink" title="Level 16 → Level 17"></a>Level 16 → Level 17</h3><p>bandit16 kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx<br>按网页提示：31000 到 32000端口<br>写脚本测：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">port</span> <span class="token keyword">in</span> <span class="token punctuation">&#123;</span><span class="token number">31000</span><span class="token punctuation">..</span><span class="token number">32000</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+  <span class="token punctuation">(</span>echo <span class="token operator">></span> /dev/tcp/localhost/<span class="token variable">$port</span><span class="token punctuation">)</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span> <span class="token string">"端口 <span class="token variable">$port</span> open"</span>
+<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>输出：<br>端口 xxx open<br>端口 xxx open<br>端口 xxx open<br>端口 xxx open</p>
+<p>明文测端口（回车，粘贴密码，回车）：<br>nc localhost 31046 断开<br>nc localhost 31518 断开<br>nc localhost 31691 回复同样<br>nc localhost 31790 断开<br>nc localhost 31960 回复同样</p>
+<p>测断开的（回车，粘贴密码，回车）：<br>openssl s_client -connect localhost:31046 报错<br>openssl s_client -connect localhost:31518 报错<br>openssl s_client -connect localhost:31790 返回了ssh keygen</p>
+<p>最后一个 返回了一堆代码，以及ssh keygen<br>复制ssh keygen下来保存</p>
+<h3 id="Level-17-→-Level-18"><a href="#Level-17-→-Level-18" class="headerlink" title="Level 17 → Level 18"></a>Level 17 → Level 18</h3><p>bandit17 SSH key登录</p>
+<h3 id="Level-18-→-Level-19"><a href="#Level-18-→-Level-19" class="headerlink" title="Level 18 → Level 19"></a>Level 18 → Level 19</h3><h3 id="Level-19-→-Level-20"><a href="#Level-19-→-Level-20" class="headerlink" title="Level 19 → Level 20"></a>Level 19 → Level 20</h3><h3 id="Level-20-→-Level-21"><a href="#Level-20-→-Level-21" class="headerlink" title="Level 20 → Level 21"></a>Level 20 → Level 21</h3><h3 id="Level-21-→-Level-22"><a href="#Level-21-→-Level-22" class="headerlink" title="Level 21 → Level 22"></a>Level 21 → Level 22</h3><h3 id="Level-22-→-Level-23"><a href="#Level-22-→-Level-23" class="headerlink" title="Level 22 → Level 23"></a>Level 22 → Level 23</h3><h3 id="Level-23-→-Level-24"><a href="#Level-23-→-Level-24" class="headerlink" title="Level 23 → Level 24"></a>Level 23 → Level 24</h3><h3 id="Level-24-→-Level-25"><a href="#Level-24-→-Level-25" class="headerlink" title="Level 24 → Level 25"></a>Level 24 → Level 25</h3><h3 id="Level-25-→-Level-26"><a href="#Level-25-→-Level-26" class="headerlink" title="Level 25 → Level 26"></a>Level 25 → Level 26</h3><h3 id="Level-26-→-Level-27"><a href="#Level-26-→-Level-27" class="headerlink" title="Level 26 → Level 27"></a>Level 26 → Level 27</h3><h3 id="Level-27-→-Level-28"><a href="#Level-27-→-Level-28" class="headerlink" title="Level 27 → Level 28"></a>Level 27 → Level 28</h3><h3 id="Level-28-→-Level-29"><a href="#Level-28-→-Level-29" class="headerlink" title="Level 28 → Level 29"></a>Level 28 → Level 29</h3><h3 id="Level-29-→-Level-30"><a href="#Level-29-→-Level-30" class="headerlink" title="Level 29 → Level 30"></a>Level 29 → Level 30</h3><h3 id="Level-30-→-Level-31"><a href="#Level-30-→-Level-31" class="headerlink" title="Level 30 → Level 31"></a>Level 30 → Level 31</h3><h3 id="Level-31-→-Level-32"><a href="#Level-31-→-Level-32" class="headerlink" title="Level 31 → Level 32"></a>Level 31 → Level 32</h3><h3 id="Level-32-→-Level-33"><a href="#Level-32-→-Level-33" class="headerlink" title="Level 32 → Level 33"></a>Level 32 → Level 33</h3>
                 
             </div>
             <hr/>
@@ -615,7 +695,7 @@ sTop <span class="token operator">=</span> document<span class="token punctuatio
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://5soros.github.io/2024/01/25/guan-yu-document-body-scrolltop-he-document-documentelement-scrolltop-zhi-wei-0-de-wen-ti/">https://5soros.github.io/2024/01/25/guan-yu-document-body-scrolltop-he-document-documentelement-scrolltop-zhi-wei-0-de-wen-ti/</a>
+                    <a href="https://5soros.github.io/2025/09/18/overthewire-bandit-wargame-clearance-record/">https://5soros.github.io/2025/09/18/overthewire-bandit-wargame-clearance-record/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -653,8 +733,12 @@ sTop <span class="token operator">=</span> document<span class="token punctuatio
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JS/">
-                                    <span class="chip bg-color">JS</span>
+                                <a href="/tags/CTF/">
+                                    <span class="chip bg-color">CTF</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%B8%97%E9%80%8F/">
+                                    <span class="chip bg-color">渗透</span>
                                 </a>
                             
                         </div>
@@ -824,17 +908,18 @@ sTop <span class="token operator">=</span> document<span class="token punctuatio
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/01/26/yi-ge-jian-dan-de-dan-chuang-dao-hang-xi-ding-bu-jian-zhan-kai-shou-qi/">
+                <a href="/2025/09/18/overthewire-bandit-wargame-clearance-record/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="一个简单的弹窗，导航吸顶，部件展开收起">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="OverTheWire Bandit wargame clearance record">
                         
-                        <span class="card-title">一个简单的弹窗，导航吸顶，部件展开收起</span>
+                        <span class="card-title">OverTheWire Bandit wargame clearance record</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -844,34 +929,31 @@ sTop <span class="token operator">=</span> document<span class="token punctuatio
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-09-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%A0%81%E6%B5%B7%E6%97%A0%E6%B6%AF/" class="post-category">
-                                    码海无涯
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JS/">
-                        <span class="chip bg-color">JS</span>
+                    <a href="/tags/CTF/">
+                        <span class="chip bg-color">CTF</span>
                     </a>
                     
-                    <a href="/tags/CSS/">
-                        <span class="chip bg-color">CSS</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%A0%81%E6%B5%B7%E6%97%A0%E6%B6%AF/">
-                        <span class="chip bg-color">码海无涯</span>
+                    <a href="/tags/%E6%B8%97%E9%80%8F/">
+                        <span class="chip bg-color">渗透</span>
                     </a>
                     
                 </div>
@@ -885,13 +967,13 @@ sTop <span class="token operator">=</span> document<span class="token punctuatio
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/01/20/20-ge-ling-ren-liang-tan-de-yi-xing-javascript-dai-ma/">
+                <a href="/2025/09/17/linux-100-commands-parameter/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="20 个令人惊叹的一行 JavaScript 代码">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="linux 100 commands &amp; parameter">
                         
-                        <span class="card-title">20 个令人惊叹的一行 JavaScript 代码</span>
+                        <span class="card-title">linux 100 commands &amp; parameter</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -902,14 +984,14 @@ sTop <span class="token operator">=</span> document<span class="token punctuatio
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-09-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/web%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    web前端
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
                                 </a>
                             
                             
@@ -919,8 +1001,12 @@ sTop <span class="token operator">=</span> document<span class="token punctuatio
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JS/">
-                        <span class="chip bg-color">JS</span>
+                    <a href="/tags/%E8%BF%90%E7%BB%B4/">
+                        <span class="chip bg-color">运维</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                        <span class="chip bg-color">服务器</span>
                     </a>
                     
                 </div>
