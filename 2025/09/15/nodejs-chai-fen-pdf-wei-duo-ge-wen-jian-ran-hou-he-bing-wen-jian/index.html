@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="用JS对页面中的图片和JS文件实时更新, 前端 JS HTML CSS Linux">
+    <meta name="keywords" content="Nodejs拆分PDF为多个文件,然后合并文件, 前端 JS HTML CSS Linux">
     <meta name="description" content="Looking up cases and codes occasionally is convenient, as it allows you to document your experiences and knowledge, enabling you to share and teach others. This process is akin to reviewing the knowledge and acquiring a more profound comprehension of it">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>用JS对页面中的图片和JS文件实时更新 | Alan Work&#39;s Notes</title>
+    <title>Nodejs拆分PDF为多个文件,然后合并文件 | Alan Work&#39;s Notes</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">用JS对页面中的图片和JS文件实时更新</h1>
+                    <h1 class="description center-align post-title">Nodejs拆分PDF为多个文件,然后合并文件</h1>
                 </div>
             </div>
         </div>
@@ -431,27 +431,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JS/">
-                                <span class="chip bg-color">JS</span>
+                            <a href="/tags/NODEJS/">
+                                <span class="chip bg-color">NODEJS</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/web%E5%89%8D%E7%AB%AF/" class="post-category">
-                                web前端
-                            </a>
-                        
-                            <a href="/categories/web%E5%89%8D%E7%AB%AF/%E7%A0%81%E6%B5%B7%E6%97%A0%E6%B6%AF/" class="post-category">
-                                码海无涯
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -460,21 +447,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2025-09-09
+                    2025-09-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2025-09-09
+                    2025-09-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    617
+                    502
                 </div>
                 
 
@@ -504,103 +491,94 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="码海无涯系列，写给自己的注释"><a href="#码海无涯系列，写给自己的注释" class="headerlink" title="码海无涯系列，写给自己的注释"></a>码海无涯系列，写给自己的注释</h3><p>如何不大改html页面的代码，而令用户及时获得最新的图片和JS文件呢？<br>可以用JS给这些文件的后缀加上时间戳<br>以下是代码：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"DOMContentLoaded"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">const</span> timestamp <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 取时间戳</span>
-    <span class="token keyword">const</span> baseURL <span class="token operator">=</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>origin<span class="token punctuation">;</span> 
-    <span class="token comment">// 取地址，location.origin输出为“协议+域名”，一个字符串</span>
-    document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'script[src]:not([src*="?v="])'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">oldScript</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-        <span class="token comment">// 遍历所有的script的非带时间戳的地址</span>
-        <span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">const</span> scriptUrl <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>oldScript<span class="token punctuation">.</span>src<span class="token punctuation">,</span> baseURL<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token comment">// 将所有（相对的）JS库地址，和窗口的绝对地址拼接为新地址</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>scriptUrl<span class="token punctuation">.</span>pathname<span class="token punctuation">.</span><span class="token function">endsWith</span><span class="token punctuation">(</span><span class="token string">"no.js"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
-            <span class="token comment">// 过滤掉不是no.js的地址（因为其他库不需要经常更新，只有no.js需要更新）</span>
-            <span class="token keyword">const</span> newScript <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"script"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token punctuation">&#123;</span>
-                name<span class="token punctuation">,</span>
-                value
-            <span class="token punctuation">&#125;</span>
-                <span class="token keyword">of</span> oldScript<span class="token punctuation">.</span>attributes<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-                newScript<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> value<span class="token punctuation">)</span>
-            <span class="token punctuation">&#125;</span>
-            <span class="token comment">// for..of循环遍历旧的script属性和值，并将其赋值给newScript</span>
-            scriptUrl<span class="token punctuation">.</span>searchParams<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"v"</span><span class="token punctuation">,</span> timestamp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token comment">// 设置scriptUrl的v查询参数的新值为timestamp</span>
-            newScript<span class="token punctuation">.</span>src <span class="token operator">=</span> scriptUrl<span class="token punctuation">.</span>href<span class="token punctuation">;</span>
-            <span class="token comment">// 把scriptUrl的链接值赋值给newScript</span>
-            newScript<span class="token punctuation">.</span><span class="token function-variable function">onerror</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-                console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"脚本加载失败:"</span><span class="token punctuation">,</span> scriptUrl<span class="token punctuation">.</span>href<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                document<span class="token punctuation">.</span>head<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>oldScript<span class="token punctuation">.</span><span class="token function">cloneNode</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                <span class="token comment">// 出错时的处理：将 oldScript 深复制一遍到DOM树上（即回退）</span>
-            <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-            oldScript<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">replaceChild</span><span class="token punctuation">(</span>newScript<span class="token punctuation">,</span> oldScript<span class="token punctuation">)</span>
-            <span class="token comment">// 使用replaceChild替换oldScript（注意：replaceChild </span>
-            <span class="token comment">// 是要在被替换的元素的父节点使用的，所以用</span>
-            <span class="token comment">// oldScript.parentNode找到oldScript的父节点）</span>
-        <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">"脚本替换失败:"</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span>
-        <span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token comment">// 下面给Img元素加时间戳</span>
-    <span class="token keyword">const</span> <span class="token function-variable function">processElements</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">elements<span class="token punctuation">,</span> baseURL</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-        elements<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">el</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span>el<span class="token punctuation">.</span>tagName<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'img'</span> <span class="token operator">&amp;&amp;</span> el<span class="token punctuation">.</span>src<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-                    <span class="token keyword">const</span> urlObj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>el<span class="token punctuation">.</span>src<span class="token punctuation">,</span> baseURL<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    urlObj<span class="token punctuation">.</span>searchParams<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"v"</span><span class="token punctuation">,</span> timestamp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    el<span class="token punctuation">.</span>src <span class="token operator">=</span> urlObj<span class="token punctuation">.</span>href
-                <span class="token punctuation">&#125;</span>
-            <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-                console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">"URL 解析失败:"</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span>
-            <span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+                <h4 id="拆分（切割）pdf文件为多个pdf文件"><a href="#拆分（切割）pdf文件为多个pdf文件" class="headerlink" title="拆分（切割）pdf文件为多个pdf文件"></a>拆分（切割）pdf文件为多个pdf文件</h4><p>用法: <code>node split.js &lt;pdf文件路径&gt; &lt;拆分份数&gt;</code></p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> PDFDocument <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"pdf-lib"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    <span class="token comment">// 调用processElements函数，并过滤data:image/开头的base64编码的图片</span>
-    <span class="token function">processElements</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">...</span>document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">"img[src]"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">img</span> <span class="token operator">=></span> <span class="token operator">!</span>img<span class="token punctuation">.</span>src<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">"data:image/"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> baseURL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 将 PDF 拆分成指定份数
+ * @param &#123;string&#125; inputFile 输入的 PDF 文件路径
+ * @param &#123;number&#125; parts 要拆分的份数
+ */</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">splitPdf</span><span class="token punctuation">(</span><span class="token parameter">inputFile<span class="token punctuation">,</span> parts</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// 读取原始 PDF</span>
+  <span class="token keyword">const</span> existingPdfBytes <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span>inputFile<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> pdfDoc <span class="token operator">=</span> <span class="token keyword">await</span> PDFDocument<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>existingPdfBytes<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    <span class="token comment">// 对引入的 iframe 进行处理</span>
-    document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">"iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">iframe</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">const</span> <span class="token function-variable function">processIframe</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
-                <span class="token keyword">const</span> doc <span class="token operator">=</span> iframe<span class="token punctuation">.</span>contentDocument<span class="token punctuation">;</span>
-                <span class="token comment">// 查看 iframe 里是否有 Document 对象，如果没有停止处理</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>doc<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
-                <span class="token function">processElements</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">...</span>doc<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">"img[src]"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">img</span> <span class="token operator">=></span> <span class="token operator">!</span>img<span class="token punctuation">.</span>src<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">"data:image/"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> iframe<span class="token punctuation">.</span>contentWindow<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href<span class="token punctuation">)</span>
-            <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-                console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">"跨域 iframe 访问失败:"</span><span class="token punctuation">,</span> iframe<span class="token punctuation">.</span>src<span class="token punctuation">)</span>
-            <span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-        <span class="token keyword">const</span> <span class="token function-variable function">waitForDocumentReady</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">doc<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">let</span> timeoutId<span class="token punctuation">;</span>
-            <span class="token keyword">const</span> <span class="token function-variable function">checkReady</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span>doc<span class="token punctuation">.</span>readyState <span class="token operator">===</span> <span class="token string">'complete'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-                    <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timeoutId<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-                <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
-                    <span class="token function">requestAnimationFrame</span><span class="token punctuation">(</span>checkReady<span class="token punctuation">)</span>
-                <span class="token punctuation">&#125;</span>
-            <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-            timeoutId <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-                console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">"iframe 加载超时"</span><span class="token punctuation">,</span> doc<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">30_000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 超时设定为30秒</span>
-            <span class="token function">checkReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> totalPages <span class="token operator">=</span> pdfDoc<span class="token punctuation">.</span><span class="token function">getPageCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> step <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>totalPages <span class="token operator">/</span> parts<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> remainder <span class="token operator">=</span> totalPages <span class="token operator">%</span> parts<span class="token punctuation">;</span>
 
-        <span class="token comment">// 设定 iframe 的 onLoad</span>
-        <span class="token keyword">const</span> <span class="token function-variable function">onLoad</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>iframe<span class="token punctuation">.</span>contentDocument<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-                <span class="token function">waitForDocumentReady</span><span class="token punctuation">(</span>iframe<span class="token punctuation">.</span>contentDocument<span class="token punctuation">,</span> processIframe<span class="token punctuation">)</span>
-            <span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-        iframe<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'load'</span><span class="token punctuation">,</span> onLoad<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>iframe<span class="token punctuation">.</span>contentDocument <span class="token operator">&amp;&amp;</span> <span class="token punctuation">[</span><span class="token string">'interactive'</span><span class="token punctuation">,</span> <span class="token string">'complete'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>iframe<span class="token punctuation">.</span>contentDocument<span class="token punctuation">.</span>readyState<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            <span class="token function">processIframe</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-        <span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span class="token keyword">let</span> start <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> parts<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">let</span> end <span class="token operator">=</span> start <span class="token operator">+</span> step <span class="token operator">+</span> <span class="token punctuation">(</span>remainder <span class="token operator">></span> <span class="token number">0</span> <span class="token operator">?</span> <span class="token number">1</span> <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    remainder<span class="token operator">--</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 创建一个新的 PDF</span>
+    <span class="token keyword">const</span> newPdf <span class="token operator">=</span> <span class="token keyword">await</span> PDFDocument<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> copiedPages <span class="token operator">=</span> <span class="token keyword">await</span> newPdf<span class="token punctuation">.</span><span class="token function">copyPages</span><span class="token punctuation">(</span>pdfDoc<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token function">Array</span><span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=></span> x <span class="token operator">+</span> start<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    copiedPages<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">page</span><span class="token punctuation">)</span> <span class="token operator">=></span> newPdf<span class="token punctuation">.</span><span class="token function">addPage</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 保存拆分后的 PDF</span>
+    <span class="token keyword">const</span> pdfBytes <span class="token operator">=</span> <span class="token keyword">await</span> newPdf<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> outName <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">part_</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">.pdf</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+    fs<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span>outName<span class="token punctuation">,</span> pdfBytes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">已生成: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>outName<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> (第 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>start <span class="token operator">+</span> <span class="token number">1</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> 页 到 第 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>end<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> 页)</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    start <span class="token operator">=</span> end<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// 使用示例：node split.js input.pdf 5</span>
+<span class="token keyword">const</span> inputFile <span class="token operator">=</span> process<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> parts <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>inputFile <span class="token operator">||</span> <span class="token operator">!</span>parts<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"用法: node split.js &lt;pdf文件路径> &lt;拆分份数>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  process<span class="token punctuation">.</span><span class="token function">exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token function">splitPdf</span><span class="token punctuation">(</span>inputFile<span class="token punctuation">,</span> parts<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=></span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="按顺序合并拆分的pdf文件为1个pdf文件"><a href="#按顺序合并拆分的pdf文件为1个pdf文件" class="headerlink" title="按顺序合并拆分的pdf文件为1个pdf文件"></a>按顺序合并拆分的pdf文件为1个pdf文件</h4><p>用法: <code>用法: node merge.js &lt;输出文件名&gt; &lt;输入文件1&gt; &lt;输入文件2&gt; &lt;输入文件3&gt; ...</code></p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> PDFDocument <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"pdf-lib"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 合并多个 PDF 文件
+ * @param &#123;string[]&#125; inputFiles 要合并的 PDF 文件路径数组
+ * @param &#123;string&#125; outputFile 输出的 PDF 文件名
+ */</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">mergePdf</span><span class="token punctuation">(</span><span class="token parameter">inputFiles<span class="token punctuation">,</span> outputFile</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> mergedPdf <span class="token operator">=</span> <span class="token keyword">await</span> PDFDocument<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> file <span class="token keyword">of</span> inputFiles<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> pdfBytes <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> pdf <span class="token operator">=</span> <span class="token keyword">await</span> PDFDocument<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>pdfBytes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> copiedPages <span class="token operator">=</span> <span class="token keyword">await</span> mergedPdf<span class="token punctuation">.</span><span class="token function">copyPages</span><span class="token punctuation">(</span>pdf<span class="token punctuation">,</span> pdf<span class="token punctuation">.</span><span class="token function">getPageIndices</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    copiedPages<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">page</span><span class="token punctuation">)</span> <span class="token operator">=></span> mergedPdf<span class="token punctuation">.</span><span class="token function">addPage</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">已添加: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>file<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token keyword">const</span> mergedBytes <span class="token operator">=</span> <span class="token keyword">await</span> mergedPdf<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  fs<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span>outputFile<span class="token punctuation">,</span> mergedBytes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">✅ 合并完成: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>outputFile<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// 用法: node merge.js output.pdf part_1.pdf part_2.pdf ...</span>
+<span class="token keyword">const</span> args <span class="token operator">=</span> process<span class="token punctuation">.</span>argv<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>args<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"用法: node merge.js &lt;输出文件名> &lt;输入文件1> &lt;输入文件2> ..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  process<span class="token punctuation">.</span><span class="token function">exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> outputFile <span class="token operator">=</span> args<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> inputFiles <span class="token operator">=</span> args<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">mergePdf</span><span class="token punctuation">(</span>inputFiles<span class="token punctuation">,</span> outputFile<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=></span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
                 
             </div>
             <hr/>
@@ -626,7 +604,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://5soros.github.io/2025/09/09/yong-js-dui-ye-mian-zhong-de-tu-pian-he-js-wen-jian-shi-shi-geng-xin/">https://5soros.github.io/2025/09/09/yong-js-dui-ye-mian-zhong-de-tu-pian-he-js-wen-jian-shi-shi-geng-xin/</a>
+                    <a href="https://5soros.github.io/2025/09/15/nodejs-chai-fen-pdf-wei-duo-ge-wen-jian-ran-hou-he-bing-wen-jian/">https://5soros.github.io/2025/09/15/nodejs-chai-fen-pdf-wei-duo-ge-wen-jian-ran-hou-he-bing-wen-jian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -664,8 +642,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JS/">
-                                    <span class="chip bg-color">JS</span>
+                                <a href="/tags/NODEJS/">
+                                    <span class="chip bg-color">NODEJS</span>
                                 </a>
                             
                         </div>
@@ -839,13 +817,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2025/09/15/nodejs-chai-fen-pdf-wei-duo-ge-wen-jian-ran-hou-he-bing-wen-jian/">
+                <a href="/2025/09/15/linux-100-commands-parameter/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Nodejs拆分PDF为多个文件,然后合并文件">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Nodejs拆分PDF为多个文件,然后合并文件</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -867,14 +845,6 @@
                     </div>
                 </div>
                 
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/NODEJS/">
-                        <span class="chip bg-color">NODEJS</span>
-                    </a>
-                    
-                </div>
-                
             </div>
         </div>
         
@@ -884,13 +854,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2025/08/26/di-yi-ge-nodejs-xiang-mu-shang-xian-de-jing-yan/">
+                <a href="/2025/09/09/yong-js-dui-ye-mian-zhong-de-tu-pian-he-js-wen-jian-shi-shi-geng-xin/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="第一个nodejs项目上线的经验">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="用JS对页面中的图片和JS文件实时更新">
                         
-                        <span class="card-title">第一个nodejs项目上线的经验</span>
+                        <span class="card-title">用JS对页面中的图片和JS文件实时更新</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -901,13 +871,17 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-08-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-09-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%A0%81%E6%B5%B7%E6%97%A0%E6%B6%AF/" class="post-category">
+                            <a href="/categories/web%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    web前端
+                                </a>
+                            
+                            <a href="/categories/web%E5%89%8D%E7%AB%AF/%E7%A0%81%E6%B5%B7%E6%97%A0%E6%B6%AF/" class="post-category">
                                     码海无涯
                                 </a>
                             
@@ -918,12 +892,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%A0%81%E6%B5%B7%E6%97%A0%E6%B6%AF/">
-                        <span class="chip bg-color">码海无涯</span>
-                    </a>
-                    
-                    <a href="/tags/NODEJS/">
-                        <span class="chip bg-color">NODEJS</span>
+                    <a href="/tags/JS/">
+                        <span class="chip bg-color">JS</span>
                     </a>
                     
                 </div>

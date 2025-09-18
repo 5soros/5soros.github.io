@@ -1,0 +1,1980 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="前端 JS HTML CSS Linux">
+    <meta name="description" content="Looking up cases and codes occasionally is convenient, as it allows you to document your experiences and knowledge, enabling you to share and teach others. This process is akin to reviewing the knowledge and acquiring a more profound comprehension of it">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Alan Work&#39;s Notes</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Alan Work&#39;s Notes</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Alan Work&#39;s Notes</div>
+        <div class="logo-desc">
+            
+            Looking up cases and codes occasionally is convenient, as it allows you to document your experiences and knowledge, enabling you to share and teach others. This process is akin to reviewing the knowledge and acquiring a more profound comprehension of it
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2025-09-15
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2025-09-17
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    16 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Linux-常用-100-命令速查表"><a href="#Linux-常用-100-命令速查表" class="headerlink" title="Linux 常用 100 命令速查表"></a>Linux 常用 100 命令速查表</h1><hr>
+<h2 id="一、文件与目录管理"><a href="#一、文件与目录管理" class="headerlink" title="一、文件与目录管理"></a>一、文件与目录管理</h2><ol>
+<li><p><strong>ls</strong> – list<br>显示目录内容  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> <span class="token parameter variable">-l</span>       <span class="token comment"># 详细列表</span>
+<span class="token function">ls</span> <span class="token parameter variable">-a</span>       <span class="token comment"># 包括隐藏文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>cd</strong> – change directory<br>切换目录  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> /etc
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>       <span class="token comment"># 返回上一级</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>pwd</strong> – print working directory<br>显示当前目录  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">pwd</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>mkdir</strong> – make directory<br>创建目录  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token builtin class-name">test</span>
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> a/b/c   <span class="token comment"># 递归创建</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>rmdir</strong> – remove directory<br>删除空目录  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rmdir</span> <span class="token builtin class-name">test</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>tree</strong> – (无缩写)<br>以树形结构显示目录  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tree<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>lsblk</strong> – list block devices<br>查看磁盘挂载情况  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">lsblk<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h2 id="二、文件操作"><a href="#二、文件操作" class="headerlink" title="二、文件操作"></a>二、文件操作</h2><ol start="8">
+<li><p><strong>touch</strong> – (无缩写)<br>创建空文件&#x2F;更新时间戳  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">touch</span> a.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>cp</strong> – copy<br>复制文件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> a.txt b.txt
+<span class="token function">cp</span> <span class="token parameter variable">-r</span> dir1 dir2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>mv</strong> – move<br>移动&#x2F;重命名  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mv</span> a.txt b.txt
+<span class="token function">mv</span> old new<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>rm</strong> – remove<br>删除文件&#x2F;目录  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> a.txt
+<span class="token function">rm</span> <span class="token parameter variable">-rf</span> <span class="token function">dir</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>cat</strong> – concatenate</p>
+<p>&#x2F;kɒnˈkætɪneɪt&#x2F;<br>adj.连锁状的<br>v.使(成串地)连结衔接起来<br>web.连接；串联；多联体</p>
+<p>查看文件内容  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>more</strong> – (无缩写)<br>分页查看文件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">more</span> file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>less</strong> – (无缩写)<br>更强大的分页工具  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">less</span> file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>head</strong> – (无缩写)<br>查看文件前几行  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">head</span> <span class="token parameter variable">-n</span> <span class="token number">10</span> file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>tail</strong> – (无缩写)<br>查看文件末尾内容  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">tail</span> <span class="token parameter variable">-f</span> log.txt   <span class="token comment"># 实时跟踪</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>wc</strong> – word count<br>统计文件行数、字数、字节数  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wc</span> <span class="token parameter variable">-l</span> file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>stat</strong> – status<br>查看文件属性  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">stat</span> file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>file</strong> – (无缩写)<br>查看文件类型  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">file</span> file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h2 id="三、搜索与查找"><a href="#三、搜索与查找" class="headerlink" title="三、搜索与查找"></a>三、搜索与查找</h2><ol start="20">
+<li><p><strong>find</strong> – (无缩写)<br>按条件查找文件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-name</span> <span class="token string">"*.txt"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>locate</strong> – (无缩写)<br>&#x2F;ˈloʊkeɪt&#x2F;<br>v. 找出…的准确位置；确定…的准确地点；把…安置在（或建造于）<br>web. 定位；位于；使坐落于</p>
+<p>快速查找文件（依赖索引）  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">locate</span> <span class="token function">passwd</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>which</strong> – (无缩写)<br>查找命令路径  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">which</span> <span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>whereis</strong> – (无缩写)<br>查找命令及帮助文档位置  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">whereis</span> <span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>type</strong> – (无缩写)<br>判断命令类型（内建&#x2F;外部）  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">type</span> <span class="token builtin class-name">cd</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>grep</strong> – global regular expression print<br>文本搜索（详见文档末尾）</p>
+</li>
+</ol>
+<hr>
+<h2 id="四、压缩与归档"><a href="#四、压缩与归档" class="headerlink" title="四、压缩与归档"></a>四、压缩与归档</h2><ol start="26">
+<li><p><strong>tar</strong> – tape archive<br>打包&#x2F;解包  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">tar</span> <span class="token parameter variable">-cvf</span> a.tar <span class="token function">dir</span>
+<span class="token function">tar</span> <span class="token parameter variable">-xvf</span> a.tar<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>gzip</strong> – GNU zip<br>压缩文件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">gzip</span> file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>gunzip</strong> – GNU unzip<br>解压文件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">gunzip file.txt.gz<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>zip</strong> – (无缩写)<br>压缩文件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">zip</span> a.zip file1 file2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>unzip</strong> – (无缩写)<br>解压文件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">unzip</span> a.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h2 id="五、用户与权限"><a href="#五、用户与权限" class="headerlink" title="五、用户与权限"></a>五、用户与权限</h2><ol start="31">
+<li><p><strong>whoami</strong> – (无缩写)<br>显示当前用户  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">whoami</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>id</strong> – (无缩写)<br>显示用户 UID、组信息  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">id</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>who</strong> – (无缩写)<br>显示登录用户  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">who</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>w</strong> – (无缩写)<br>显示当前活动用户及负载  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">w<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>su</strong> – substitute user</p>
+<p>&#x2F;ˈsʌbstɪtuːt&#x2F;<br>v.取代；（以…）代替<br>n.代用品；代替物；代替者<br>web.替身；替换；替代  </p>
+<p>切换用户  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">su</span> root<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>sudo</strong> – super user do<br>临时以 root 身份执行  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">ls</span> /root<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>passwd</strong> – (无缩写)<br>修改密码  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">passwd</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>chmod</strong> – change mode<br>修改权限  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chmod</span> <span class="token number">755</span> file.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>chown</strong> – change owner<br>修改所有者  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chown</span> user:user file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>groups</strong> – (无缩写)<br>查看用户所属组  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">groups</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h2 id="六、进程与系统监控"><a href="#六、进程与系统监控" class="headerlink" title="六、进程与系统监控"></a>六、进程与系统监控</h2><ol start="41">
+<li><p><strong>ps</strong> – process status<br>查看进程  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ps</span> aux<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>top</strong> – (无缩写)<br>动态显示进程  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">top</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>htop</strong> – (无缩写)<br>更友好的进程管理工具  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">htop</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>kill</strong> – (无缩写)<br>结束进程<br>（数字为对应的PID值）</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">kill</span> <span class="token number">1234</span>
+<span class="token comment"># 使用信号9进行强制结束进程</span>
+<span class="token function">kill</span> <span class="token parameter variable">-9</span> <span class="token number">1234</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>killall</strong> – (kill all)<br>按服务名结束相关进程  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">killall</span> nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>jobs</strong> – (无缩写)<br>查看后台任务，它会列出所有作业的编号、状态和命令  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">jobs</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>fg</strong> – foreground<br>例子的意思是将后台编号1的任务切换到前台运行任务<br>%1 是作业号（job number）<br>比如执行 %1 任务时，使用 <code>Ctrl+Z</code> 暂停，或者在命令末尾加上 &amp;，任务会被暂停<br>此时终端可以用来做别的事，当别的事情完成后，就可以用 <code>fg %1</code> 将暂停的作业重新开始</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">fg</span> %1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>bg</strong> – background<br>将后台暂停的作业 %N 变为后台运行<br>接上例，如果 %1 被 Ctrl+Z 暂停了，可以用 bg %1 让它在后台继续运行，而不是回到前台    </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">bg</span> %1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>uptime</strong> – (无缩写)<br>查看系统运行时间和负载  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">uptime</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>dmesg</strong> – diagnostic message<br>&#x2F;ˌdaɪ.əɡˈnɑː.stɪk&#x2F;<br>adj.诊断的;用于诊断的(对于疾病)<br>判断的；用于判断的(对于问题)<br>查看内核日志  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">dmesg</span> <span class="token operator">|</span> <span class="token function">tail</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h2 id="七、磁盘与文件系统"><a href="#七、磁盘与文件系统" class="headerlink" title="七、磁盘与文件系统"></a>七、磁盘与文件系统</h2><ol start="51">
+<li><p><strong>df</strong> – disk free<br>查看磁盘空间  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">df</span> <span class="token parameter variable">-h</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>du</strong> – disk usage<br>查看目录大小  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">du</span> <span class="token parameter variable">-sh</span> *<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>mount</strong> – (无缩写)<br>挂载文件系统  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mount</span> /dev/sdb1 /mnt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>umount</strong> – (无缩写)<br>卸载文件系统  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">umount</span> /mnt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>lsblk</strong> – list block devices<br>查看磁盘分区  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">lsblk<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>blkid</strong> – block id<br>查看磁盘 UUID  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">blkid<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>fsck</strong> – file system check<br>检查文件系统错误  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">fsck</span> /dev/sdb1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>mkfs</strong> – make filesystem<br>格式化磁盘  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">mkfs.ext4 /dev/sdb1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h2 id="八、网络管理"><a href="#八、网络管理" class="headerlink" title="八、网络管理"></a>八、网络管理</h2><ol start="59">
+<li><p><strong>ping</strong> – (无缩写)<br>测试网络连通  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ping</span> google.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>curl</strong> – (无缩写)<br>网络请求工具  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">curl</span> http://example.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>wget</strong> – (无缩写)<br>下载文件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> http://example.com/file.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>ifconfig</strong> – interface config<br>显示或配置网卡（旧命令）  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ifconfig</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>ip</strong> – (无缩写)<br>新的网络配置命令  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ip</span> addr show<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>netstat</strong> – network statistics<br>网络连接情况（旧）  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">netstat</span> <span class="token parameter variable">-tulnp</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>ss</strong> – socket statistics<br>查看网络连接（推荐）  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ss <span class="token parameter variable">-tulnp</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>traceroute</strong> – (无缩写)<br>路由跟踪  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">traceroute</span> google.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>dig</strong> – domain information groper<br>DNS 查询  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">dig</span> google.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>nslookup</strong> – (无缩写)<br>另一种 DNS 查询  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">nslookup</span> google.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>scp</strong> – secure copy<br>远程文件拷贝  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">scp</span> file.txt user@host:/tmp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>rsync</strong> – remote sync<br>高效同步文件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rsync</span> <span class="token parameter variable">-avz</span> src/ user@host:/dst<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>ssh</strong> – secure shell<br>远程登录  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ssh</span> user@host<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h2 id="九、软件包管理（以-Debian-Ubuntu-为例）"><a href="#九、软件包管理（以-Debian-Ubuntu-为例）" class="headerlink" title="九、软件包管理（以 Debian&#x2F;Ubuntu 为例）"></a>九、软件包管理（以 Debian&#x2F;Ubuntu 为例）</h2><ol start="72">
+<li><p><strong>apt-get</strong> – advanced package tool<br>安装&#x2F;卸载软件  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>apt</strong> – (简化版)  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> update
+<span class="token function">sudo</span> <span class="token function">apt</span> upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>dpkg</strong> – Debian package<br>管理 <code>.deb</code> 包  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dpkg <span class="token parameter variable">-i</span> pkg.deb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>snap</strong> – (无缩写)<br>新的软件包格式  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">snap <span class="token function">install</span> code             <span class="token comment"># - 安装 vscode</span>
+snap remove                   <span class="token comment"># - 移除 snap 包</span>
+snap refresh                  <span class="token comment"># - 更新 snap 包</span>
+snap list                     <span class="token comment"># - 列出已安装的 snap 包</span>
+snap <span class="token function">find</span>                     <span class="token comment"># - 搜索可用的 snap 包</span>
+snap info                     <span class="token comment"># - 显示 snap 包信息</span>
+snap revert                   <span class="token comment"># - 回滚到之前版本</span>
+snap disable/enable           <span class="token comment"># - 禁用/启用 snap 包</span>
+snap services                 <span class="token comment"># - 管理 snap 服务    </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h2 id="十、系统信息"><a href="#十、系统信息" class="headerlink" title="十、系统信息"></a>十、系统信息</h2><ol start="76">
+<li><p><strong>uname</strong> – unix name<br>查看系统信息  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">uname</span> <span class="token parameter variable">-a</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>hostname</strong> – (无缩写)<br>查看主机名  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">hostname</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>date</strong> – (无缩写)<br>显示&#x2F;设置日期  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">date</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>cal</strong> – calendar<br>显示日历  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cal</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>uptime</strong> – (无缩写)<br>系统运行时长  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">uptime</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>free</strong> – (无缩写)<br>显示内存  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">free</span> <span class="token parameter variable">-h</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>vmstat</strong> – virtual memory statistics<br>内存&#x2F;CPU统计  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">vmstat</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>iostat</strong> – I&#x2F;O statistics<br>磁盘 I&#x2F;O 监控  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">iostat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>lscpu</strong> – list CPU<br>CPU 信息  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">lscpu<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>lsusb</strong> – list USB<br>USB 设备信息  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">lsusb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>lspci</strong> – list PCI<br>PCI 设备信息  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">lspci<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h2 id="十一、Shell-常用"><a href="#十一、Shell-常用" class="headerlink" title="十一、Shell 常用"></a>十一、Shell 常用</h2><ol start="87">
+<li><p><strong>echo</strong> – (无缩写)<br>输出字符串  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> hello<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>history</strong> – (无缩写)<br>查看历史命令  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">history</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">ssh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>alias</strong> – (无缩写)<br>设置命令别名  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">alias</span> <span class="token assign-left variable">ll</span><span class="token operator">=</span><span class="token string">'ls -alF'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>unalias</strong> – (无缩写)<br>删除别名  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">unalias</span> ll<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>clear</strong> – (无缩写)<br>清屏  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">clear</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>exit</strong> – (无缩写)<br>退出 shell  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">exit</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>logout</strong> – (无缩写)<br>注销会话  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">logout</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>env</strong> – environment<br>查看环境变量  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">env</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>export</strong> – (无缩写)<br>设置环境变量  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span>:/opt/bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>printenv</strong> – (无缩写)<br>打印环境变量  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">printenv</span> <span class="token environment constant">PATH</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>set</strong> – (无缩写)<br>显示所有变量  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">set</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>unset</strong> – (无缩写)<br>删除变量  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">unset</span> VAR<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>source</strong> – (无缩写)<br>执行脚本  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">source</span> ~/.bashrc<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><strong>man</strong> – manual<br>查看帮助文档  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">man</span> <span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h1 id="🔎-附录：grep-速查表"><a href="#🔎-附录：grep-速查表" class="headerlink" title="🔎 附录：grep 速查表"></a>🔎 附录：grep 速查表</h1><h3 id="grep-语法"><a href="#grep-语法" class="headerlink" title="grep 语法"></a>grep 语法</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">grep</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> pattern <span class="token punctuation">[</span>files<span class="token punctuation">]</span>
+或
+<span class="token function">grep</span> <span class="token punctuation">[</span>-abcEFGhHilLnqrsvVwxy<span class="token punctuation">]</span><span class="token punctuation">[</span>-A<span class="token operator">&lt;</span>显示行数<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span>-B<span class="token operator">&lt;</span>显示列数<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span>-C<span class="token operator">&lt;</span>显示列数<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span>-d<span class="token operator">&lt;</span>进行动作<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span>-e<span class="token operator">&lt;</span>范本样式<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span>-f<span class="token operator">&lt;</span>范本文件<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span>--help<span class="token punctuation">]</span><span class="token punctuation">[</span>范本样式<span class="token punctuation">]</span><span class="token punctuation">[</span>文件或目录<span class="token punctuation">..</span>.<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>pattern - 表示要查找的字符串或正则表达式。</li>
+<li>files - 表示要查找的文件名，可以同时查找多个文件，如果省略 files 参数，则默认从标准输入中读取数据。</li>
+</ul>
+<p><strong>常用参数：</strong>：</p>
+<ul>
+<li><code>-i</code>：忽略大小写进行匹配。</li>
+<li><code>-v</code>：反向查找，只打印不匹配的行。</li>
+<li><code>-n</code>：显示匹配行的行号。</li>
+<li><code>-r</code>：递归查找子目录中的文件。</li>
+<li><code>-l</code>：只打印匹配的文件名。</li>
+<li><code>-c</code>：只打印匹配的行数。</li>
+</ul>
+<p><strong>更多参数说明</strong>：</p>
+<ul>
+<li><strong>-a 或 –text</strong> : 不要忽略二进制的数据。</li>
+<li><strong>-A&lt;显示行数&gt; 或 –after-context&#x3D;&lt;显示行数&gt;</strong> : 除了显示符合范本样式的那一列之外，并显示该行之后的内容。</li>
+<li><strong>-b 或 –byte-offset</strong> : 在显示符合样式的那一行之前，标示出该行第一个字符的编号。</li>
+<li><strong>-B&lt;显示行数&gt; 或 –before-context&#x3D;&lt;显示行数&gt;</strong> : 除了显示符合样式的那一行之外，并显示该行之前的内容。</li>
+<li><strong>-c 或 –count</strong> : 计算符合样式的列数。</li>
+<li><strong>-C&lt;显示行数&gt; 或 –context&#x3D;&lt;显示行数&gt;或-&lt;显示行数&gt;</strong> : 除了显示符合样式的那一行之外，并显示该行之前后的内容。</li>
+<li><strong>-d &lt;动作&gt; 或 –directories&#x3D;&lt;动作&gt;</strong> : 当指定要查找的是目录而非文件时，必须使用这项参数，否则grep指令将回报信息并停止动作。</li>
+<li><strong>-e&lt;范本样式&gt; 或 –regexp&#x3D;&lt;范本样式&gt;</strong> : 指定字符串做为查找文件内容的样式。</li>
+<li><strong>-E 或 –extended-regexp</strong> : 将样式为延伸的正则表达式来使用。</li>
+<li><strong>-f&lt;规则文件&gt; 或 –file&#x3D;&lt;规则文件&gt;</strong> : 指定规则文件，其内容含有一个或多个规则样式，让grep查找符合规则条件的文件内容，格式为每行一个规则样式。</li>
+<li><strong>-F 或 –fixed-regexp</strong> : 将样式视为固定字符串的列表。</li>
+<li><strong>-G 或 –basic-regexp</strong> : 将样式视为普通的表示法来使用。</li>
+<li><strong>-h 或 –no-filename</strong> : 在显示符合样式的那一行之前，不标示该行所属的文件名称。</li>
+<li><strong>-H 或 –with-filename</strong> : 在显示符合样式的那一行之前，表示该行所属的文件名称。</li>
+<li><strong>-i 或 –ignore-case</strong> : 忽略字符大小写的差别。</li>
+<li><strong>-l 或 –file-with-matches</strong> : 列出文件内容符合指定的样式的文件名称。</li>
+<li><strong>-L 或 –files-without-match</strong> : 列出文件内容不符合指定的样式的文件名称。</li>
+<li><strong>-n 或 –line-number</strong> : 在显示符合样式的那一行之前，标示出该行的列数编号。</li>
+<li><strong>-o 或 –only-matching</strong> : 只显示匹配PATTERN 部分。</li>
+<li><strong>-q 或 –quiet或–silent</strong> : 不显示任何信息。</li>
+<li><strong>-r 或 –recursive</strong> : 此参数的效果和指定”-d recurse”参数相同。</li>
+<li><strong>-s 或 –no-messages</strong> : 不显示错误信息。</li>
+<li><strong>-v 或 –invert-match</strong> : 显示不包含匹配文本的所有行。</li>
+<li><strong>-V 或 –version</strong> : 显示版本信息。</li>
+<li><strong>-w 或 –word-regexp</strong> : 只显示全字符合的列。</li>
+<li><strong>-x –line-regexp</strong> : 只显示全列符合的列。</li>
+<li>**-y **: 此参数的效果和指定”-i”参数相同。</li>
+</ul>
+<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">grep</span> <span class="token string">'root'</span> /etc/passwd     <span class="token comment"># 搜索包含 root 的行</span>
+<span class="token function">grep</span> <span class="token parameter variable">-i</span> <span class="token string">'error'</span> log.txt     <span class="token comment"># 忽略大小写</span>
+<span class="token function">grep</span> <span class="token parameter variable">-n</span> <span class="token string">'main'</span> file.c       <span class="token comment"># 显示行号</span>
+<span class="token function">grep</span> <span class="token parameter variable">-v</span> <span class="token string">'test'</span> file.txt     <span class="token comment"># 反向匹配</span>
+<span class="token function">grep</span> <span class="token parameter variable">-r</span> <span class="token string">'TODO'</span> ./src        <span class="token comment"># 递归搜索目录</span>
+<span class="token function">grep</span> <span class="token parameter variable">--color</span><span class="token operator">=</span>auto root /etc/passwd   <span class="token comment"># 高亮</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="常用正则"><a href="#常用正则" class="headerlink" title="常用正则"></a>常用正则</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">grep</span> <span class="token string">'^root'</span> /etc/passwd    <span class="token comment"># 以 root 开头</span>
+<span class="token function">grep</span> <span class="token string">'bash$'</span> /etc/passwd    <span class="token comment"># 以 bash 结尾</span>
+<span class="token function">grep</span> <span class="token string">'r..t'</span> file.txt        <span class="token comment"># r+任意两字符+t</span>
+<span class="token function">grep</span> <span class="token string">'lo*ng'</span> file.txt       <span class="token comment"># lng, long, loong</span>
+<span class="token function">grep</span> <span class="token string">'[ch]at'</span> file.txt      <span class="token comment"># cat 或 hat</span>
+<span class="token function">grep</span> <span class="token string">'[^0-9]'</span> file.txt      <span class="token comment"># 含非数字</span>
+<span class="token function">grep</span> <span class="token parameter variable">-E</span> <span class="token string">'(foo|bar)'</span> file.txt <span class="token comment"># foo 或 bar</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="组合用法"><a href="#组合用法" class="headerlink" title="组合用法"></a>组合用法</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ps</span> aux <span class="token operator">|</span> <span class="token function">grep</span> nginx         <span class="token comment"># 查找进程</span>
+<span class="token function">dmesg</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-i</span> usb         <span class="token comment"># 内核日志里找 USB</span>
+<span class="token function">history</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">ssh</span>          <span class="token comment"># 历史命令中找 ssh</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+<h2 id="Linux-常用命令参数速查表（A-Z）"><a href="#Linux-常用命令参数速查表（A-Z）" class="headerlink" title="Linux 常用命令参数速查表（A-Z）"></a>Linux 常用命令参数速查表（A-Z）</h2><hr>
+<h2 id="🅰-A"><a href="#🅰-A" class="headerlink" title="🅰  A"></a>🅰  A</h2><ul>
+<li><p><strong><code>-a</code> → all</strong><br>显示所有内容（包括隐藏文件）。<br>示例：<code>ls -a</code> 显示所有文件。</p>
+</li>
+<li><p><strong><code>-A</code> → almost all</strong><br>类似 <code>-a</code>，但不显示 <code>.</code> 和 <code>..</code>。<br>示例：<code>ls -A</code>。</p>
+</li>
+</ul>
+<hr>
+<h2 id="🅱-B"><a href="#🅱-B" class="headerlink" title="🅱 B"></a>🅱 B</h2><ul>
+<li><strong>（常见命令里较少单独使用 <code>-b</code>）</strong><br>示例：<code>ls -b</code> 以转义方式显示不可打印字符。</li>
+</ul>
+<hr>
+<h2 id="🅲-C"><a href="#🅲-C" class="headerlink" title="🅲 C"></a>🅲 C</h2><ul>
+<li><strong><code>-c</code> → count &#x2F; change time</strong><br>统计、显示更改时间。<br>示例：<code>grep -c pattern file</code> 统计匹配行数。</li>
+</ul>
+<hr>
+<h2 id="🅳-D"><a href="#🅳-D" class="headerlink" title="🅳 D"></a>🅳 D</h2><ul>
+<li><strong><code>-d</code> → directory</strong><br>针对目录本身，而不是目录里的内容。<br>示例：<code>ls -d */</code> 只显示目录。</li>
+</ul>
+<hr>
+<h2 id="🅴-E"><a href="#🅴-E" class="headerlink" title="🅴 E"></a>🅴 E</h2><ul>
+<li><strong><code>-e</code> → expression</strong><br>指定表达式&#x2F;模式。<br>示例：<code>grep -e pattern1 -e pattern2 file</code>。</li>
+</ul>
+<hr>
+<h2 id="🅵-F"><a href="#🅵-F" class="headerlink" title="🅵 F"></a>🅵 F</h2><ul>
+<li><strong><code>-f</code> → force &#x2F; file</strong><br>强制执行或指定文件。<br>示例：<code>rm -f file.txt</code> 强制删除。</li>
+</ul>
+<hr>
+<h2 id="🅶-G"><a href="#🅶-G" class="headerlink" title="🅶 G"></a>🅶 G</h2><ul>
+<li><strong>（常用场景较少单独出现）</strong><br>示例：<code>ls -g</code> 类似 <code>-l</code> 但不显示所有者。</li>
+</ul>
+<hr>
+<h2 id="🅷-H"><a href="#🅷-H" class="headerlink" title="🅷 H"></a>🅷 H</h2><ul>
+<li><strong><code>-h</code> → human readable &#x2F; help</strong><br>人类可读输出；或帮助。<br>示例：<code>ls -lh</code> 显示 KB&#x2F;MB 单位文件大小。<br>示例：<code>command -h</code> 查看帮助。</li>
+</ul>
+<hr>
+<h2 id="🅸-I"><a href="#🅸-I" class="headerlink" title="🅸 I"></a>🅸 I</h2><ul>
+<li><p><strong><code>-i</code> → interactive &#x2F; ignore case &#x2F; inode</strong><br>示例：</p>
+<ul>
+<li><code>rm -i file.txt</code> 删除前确认。</li>
+<li><code>grep -i pattern file</code> 忽略大小写。</li>
+<li><code>ls -i</code> 显示 inode 号。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="🅹-J"><a href="#🅹-J" class="headerlink" title="🅹 J"></a>🅹 J</h2><ul>
+<li><strong>（很少用到）</strong></li>
+</ul>
+<hr>
+<h2 id="🅺-K"><a href="#🅺-K" class="headerlink" title="🅺 K"></a>🅺 K</h2><ul>
+<li><strong>（无通用缩写）</strong></li>
+</ul>
+<hr>
+<h2 id="🅻-L"><a href="#🅻-L" class="headerlink" title="🅻 L"></a>🅻 L</h2><ul>
+<li><strong><code>-l</code> → long</strong><br>长列表格式。<br>示例：<code>ls -l</code> 显示详细信息。</li>
+</ul>
+<hr>
+<h2 id="🅼-M"><a href="#🅼-M" class="headerlink" title="🅼 M"></a>🅼 M</h2><ul>
+<li><strong><code>-m</code> → multiple &#x2F; merge</strong><br>示例：<code>ls -m</code> 用逗号分隔文件名。</li>
+</ul>
+<hr>
+<h2 id="🅽-N"><a href="#🅽-N" class="headerlink" title="🅽 N"></a>🅽 N</h2><ul>
+<li><strong><code>-n</code> → number</strong><br>显示行号或数字形式。<br>示例：<code>grep -n pattern file</code> 显示行号。</li>
+</ul>
+<hr>
+<h2 id="🅾-O"><a href="#🅾-O" class="headerlink" title="🅾 O"></a>🅾 O</h2><ul>
+<li><p><strong><code>-o</code> → only &#x2F; owner</strong><br>示例：</p>
+<ul>
+<li><code>grep -o pattern file</code> 只输出匹配部分。</li>
+<li><code>ls -o</code> 类似 <code>-l</code> 但不显示组。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="🅿-P"><a href="#🅿-P" class="headerlink" title="🅿 P"></a>🅿 P</h2><ul>
+<li><p><strong><code>-p</code> → preserve &#x2F; parents</strong><br>示例：</p>
+<ul>
+<li><code>mkdir -p a/b/c</code> 自动创建父目录。</li>
+<li><code>cp -p</code> 保留时间戳。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="🆀-Q"><a href="#🆀-Q" class="headerlink" title="🆀 Q"></a>🆀 Q</h2><ul>
+<li><strong><code>-q</code> → quiet</strong><br>静默模式，不输出内容。<br>示例：<code>grep -q pattern file &amp;&amp; echo &quot;found&quot;</code>。</li>
+</ul>
+<hr>
+<h2 id="🆁-R"><a href="#🆁-R" class="headerlink" title="🆁 R"></a>🆁 R</h2><ul>
+<li><p><strong><code>-r</code> → recursive &#x2F; reverse</strong><br>示例：</p>
+<ul>
+<li><code>grep -r pattern ./</code> 递归搜索。</li>
+<li><code>ls -r</code> 倒序输出。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="🆂-S"><a href="#🆂-S" class="headerlink" title="🆂 S"></a>🆂 S</h2><ul>
+<li><p><strong><code>-s</code> → silent &#x2F; size &#x2F; sort</strong><br>示例：</p>
+<ul>
+<li><code>rm -s</code> 静默模式。</li>
+<li><code>du -s</code> 仅显示总大小。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="🆃-T"><a href="#🆃-T" class="headerlink" title="🆃 T"></a>🆃 T</h2><ul>
+<li><strong><code>-t</code> → time</strong><br>按时间排序。<br>示例：<code>ls -lt</code> 按修改时间排序。</li>
+</ul>
+<hr>
+<h2 id="🆄-U"><a href="#🆄-U" class="headerlink" title="🆄 U"></a>🆄 U</h2><ul>
+<li><p><strong><code>-u</code> → user &#x2F; access time</strong><br>示例：</p>
+<ul>
+<li><code>ls -lu</code> 按访问时间显示。</li>
+<li><code>chown -u user file</code> 指定用户。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="🆅-V"><a href="#🆅-V" class="headerlink" title="🆅 V"></a>🆅 V</h2><ul>
+<li><p><strong><code>-v</code> → invert match &#x2F; verbose</strong><br>示例：</p>
+<ul>
+<li><code>grep -v pattern file</code> 显示不匹配的行。</li>
+<li><code>cp -v</code> 显示详细过程。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="🆆-W"><a href="#🆆-W" class="headerlink" title="🆆 W"></a>🆆 W</h2><ul>
+<li><strong><code>-w</code> → word</strong><br>精确匹配整个单词。<br>示例：<code>grep -w root /etc/passwd</code>。</li>
+</ul>
+<hr>
+<h2 id="🆇-X"><a href="#🆇-X" class="headerlink" title="🆇 X"></a>🆇 X</h2><ul>
+<li><strong><code>-x</code> → exact match &#x2F; extract</strong><br>示例：<code>grep -x &#39;pattern&#39; file</code> 匹配整行。</li>
+</ul>
+<hr>
+<h2 id="🆈-Y"><a href="#🆈-Y" class="headerlink" title="🆈 Y"></a>🆈 Y</h2><ul>
+<li><strong>（较少见）</strong></li>
+</ul>
+<hr>
+<h2 id="🆉-Z"><a href="#🆉-Z" class="headerlink" title="🆉 Z"></a>🆉 Z</h2><ul>
+<li><strong><code>-z</code> → zero terminated &#x2F; compress</strong><br>示例：<code>grep -z</code> 用 NULL 分隔输入。<br>示例：<code>gzip -z</code> 压缩。</li>
+</ul>
+<hr>
+<h1 id="常见大小写参数对照表"><a href="#常见大小写参数对照表" class="headerlink" title="常见大小写参数对照表"></a>常见大小写参数对照表</h1><table>
+<thead>
+<tr>
+<th>小写参数</th>
+<th>大写参数</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>-a</code> (所有文件)</td>
+<td><code>-A</code> (几乎所有，排除<code>.</code>和<code>..</code>)</td>
+<td>功能细分</td>
+</tr>
+<tr>
+<td><code>-f</code> (强制&#x2F;文件)</td>
+<td><code>-F</code> (固定字符串&#x2F;完整格式)</td>
+<td>功能不同</td>
+</tr>
+<tr>
+<td><code>-l</code> (长格式&#x2F;列出匹配文件)</td>
+<td><code>-L</code> (跟随符号链接)</td>
+<td>功能不同</td>
+</tr>
+<tr>
+<td><code>-n</code> (行号)</td>
+<td><code>-N</code> (禁止转义&#x2F;字面值)</td>
+<td>功能不同</td>
+</tr>
+<tr>
+<td><code>-r</code> (递归&#x2F;反序)</td>
+<td><code>-R</code> (递归并跟随符号链接)</td>
+<td>扩展功能</td>
+</tr>
+<tr>
+<td><code>-v</code> (反选&#x2F;详细)</td>
+<td><code>-V</code> (版本信息)</td>
+<td>功能不同</td>
+</tr>
+<tr>
+<td><code>-x</code> (精确匹配整行)</td>
+<td><code>-X</code> (排除文件&#x2F;扩展功能)</td>
+<td>功能不同</td>
+</tr>
+</tbody></table>
+<h1 id="常见元字符表-Linux-Metacharacter"><a href="#常见元字符表-Linux-Metacharacter" class="headerlink" title="常见元字符表(Linux Metacharacter)"></a>常见元字符表(Linux Metacharacter)</h1><table>
+<thead>
+<tr>
+<th>元字符（Metacharacter）</th>
+<th>名称</th>
+<th>介绍</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>(空格)</em></td>
+<td>空格</td>
+<td>分隔命令、参数和选项。</td>
+<td><code>ls -l</code></td>
+</tr>
+<tr>
+<td><code>|</code></td>
+<td>管道符</td>
+<td>将前一个命令的标准输出作为后一个命令的标准输入。</td>
+<td><code>ls -l | grep &quot;.txt&quot;</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>重定向输出（覆盖）</td>
+<td>将命令的标准输出重定向到文件，会覆盖文件原有内容。</td>
+<td><code>echo &quot;Hello&quot; &gt; file.txt</code></td>
+</tr>
+<tr>
+<td><code>&gt;&gt;</code></td>
+<td>重定向输出（追加）</td>
+<td>将命令的标准输出追加到文件末尾。</td>
+<td><code>echo &quot;World&quot; &gt;&gt; file.txt</code></td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>重定向输入</td>
+<td>将文件内容作为命令的标准输入。</td>
+<td><code>wc &lt; file.txt</code></td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>变量引用</td>
+<td>引用变量的值。</td>
+<td><code>echo $HOME</code></td>
+</tr>
+<tr>
+<td><code>#</code></td>
+<td>注释</td>
+<td>在脚本或命令中用于添加注释，该行 # 之后的内容会被忽略。</td>
+<td><code># This is a comment</code></td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>通配符（Wildcard）</td>
+<td>匹配任何零个或多个字符。</td>
+<td><code>ls *.txt</code></td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>通配符（Wildcard）</td>
+<td>匹配任何单个字符。</td>
+<td><code>ls file?.txt</code></td>
+</tr>
+<tr>
+<td><code>[]</code></td>
+<td>通配符（Wildcard）</td>
+<td>匹配括号内列出的任何单个字符。</td>
+<td><code>ls [abc].txt</code></td>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td>后台执行</td>
+<td>在后台运行命令，使终端立即返回。</td>
+<td><code>sleep 60 &amp;</code></td>
+</tr>
+<tr>
+<td><code>()</code></td>
+<td>子 Shell</td>
+<td>在一个子 Shell 中执行命令列表。</td>
+<td><code>(cd /tmp &amp;&amp; ls)</code></td>
+</tr>
+<tr>
+<td><code>;</code></td>
+<td>顺序执行</td>
+<td>按顺序执行多个命令，不关心前一个命令的成功与否。</td>
+<td><code>cmd1 ; cmd2</code></td>
+</tr>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>逻辑 AND</td>
+<td>只有前一个命令成功（返回 0）时，才执行下一个命令。</td>
+<td><code>cmd1 &amp;&amp; cmd2</code></td>
+</tr>
+<tr>
+<td><code>||</code></td>
+<td>逻辑 OR</td>
+<td>只有前一个命令失败（返回非 0）时，才执行下一个命令</td>
+<td>&#96;command1</td>
+</tr>
+<tr>
+<td><code>&#39;</code></td>
+<td>单引号（Single Quotes）</td>
+<td>强引用，引号内的所有字符都按字面值处理，不进行任何转义或变量替换。</td>
+<td><code>echo &#39;$HOME&#39;</code></td>
+</tr>
+<tr>
+<td><code>&quot;</code></td>
+<td>双引号（Double Quotes）</td>
+<td>弱引用，引号内的字符按字面值处理，但会进行变量替换和命令替换。</td>
+<td><code>echo &quot;$HOME&quot;</code></td>
+</tr>
+<tr>
+<td><code>`</code></td>
+<td>反引号（Backticks）</td>
+<td>执行命令，并将其标准输出作为另一个命令的参数。</td>
+<td><code>echo &quot;The current date is `date`&quot;</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td>转义符（Escape）</td>
+<td>用于取消元字符的特殊含义，使其按字面值处理。</td>
+<td><code>echo &quot;The path is C:\\Users&quot;</code></td>
+</tr>
+</tbody></table>
+<p>更多信息：<br><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/linux-common-command.html">菜鸟教程</a><br><a target="_blank" rel="noopener" href="https://www.linuxcool.com/">linuxcool</a></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Alan Work</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://5soros.github.io/2025/09/15/linux-100-commands-parameter/">https://5soros.github.io/2025/09/15/linux-100-commands-parameter/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Alan Work</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2025/09/15/linux-100-commands-parameter/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-09-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Alan Work
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2025/09/15/nodejs-chai-fen-pdf-wei-duo-ge-wen-jian-ran-hou-he-bing-wen-jian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Nodejs拆分PDF为多个文件,然后合并文件">
+                        
+                        <span class="card-title">Nodejs拆分PDF为多个文件,然后合并文件</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-09-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Alan Work
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/NODEJS/">
+                        <span class="chip bg-color">NODEJS</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2023-2025</span>
+            
+            <span id="year">2023</span>
+            <a href="/about" target="_blank">Alan Work</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">128.8k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2023";
+                    var startMonth = "10";
+                    var startDate = "14";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
