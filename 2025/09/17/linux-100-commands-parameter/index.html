@@ -467,21 +467,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2025-09-20
+                    2026-10-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.3k
+                    4.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    17 分
+                    19 分
                 </div>
                 
 
@@ -922,7 +922,132 @@ snap services                 <span class="token comment"># - 管理 snap 服务
 
 
 
-<h2 id="Linux-常用命令参数速查表（A-Z）"><a href="#Linux-常用命令参数速查表（A-Z）" class="headerlink" title="Linux 常用命令参数速查表（A-Z）"></a>Linux 常用命令参数速查表（A-Z）</h2><hr>
+<h2 id="Linux-常用命令参数速查表（A-Z）"><a href="#Linux-常用命令参数速查表（A-Z）" class="headerlink" title="Linux 常用命令参数速查表（A-Z）"></a>Linux 常用命令参数速查表（A-Z）</h2><p>常用：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>常见英文原词</th>
+<th>中文意思</th>
+<th>典型用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>-a</code></td>
+<td>All &#x2F; Almost all</td>
+<td>全部 &#x2F; 几乎全部</td>
+<td><code>ls -a</code> 显示隐藏文件</td>
+</tr>
+<tr>
+<td><code>-l</code></td>
+<td>Long listing</td>
+<td>长格式列表</td>
+<td><code>ls -l</code> 详细显示文件信息</td>
+</tr>
+<tr>
+<td><code>-h</code></td>
+<td>Human-readable</td>
+<td>人类可读</td>
+<td><code>df -h</code> 容量显示为 GB、MB</td>
+</tr>
+<tr>
+<td><code>-f</code></td>
+<td>Force &#x2F; File</td>
+<td>强制 &#x2F; 文件，视命令而定</td>
+<td><code>rm -f</code> 强制删除，不提示</td>
+</tr>
+<tr>
+<td><code>-n</code></td>
+<td>Number &#x2F; Numeric</td>
+<td>数量 &#x2F; 数字形式，视命令而定</td>
+<td><code>head -n 5</code> 显示前 5 行</td>
+</tr>
+<tr>
+<td><code>-r</code></td>
+<td>Recursive &#x2F; Reverse</td>
+<td>递归 &#x2F; 反向，视命令而定</td>
+<td><code>cp -r</code> 递归复制目录</td>
+</tr>
+<tr>
+<td><code>-v</code></td>
+<td>Verbose</td>
+<td>详细输出</td>
+<td><code>cp -v</code> 显示复制过程</td>
+</tr>
+<tr>
+<td><code>-q</code></td>
+<td>Quiet</td>
+<td>安静模式</td>
+<td>减少输出信息</td>
+</tr>
+<tr>
+<td><code>-i</code></td>
+<td>Interactive</td>
+<td>交互式</td>
+<td><code>rm -i</code> 删除前询问</td>
+</tr>
+<tr>
+<td><code>-p</code></td>
+<td>Parents &#x2F; Port</td>
+<td>创建父目录 &#x2F; 端口，视命令而定</td>
+<td><code>mkdir -p</code> 创建多级目录</td>
+</tr>
+<tr>
+<td><code>-s</code></td>
+<td>Silent &#x2F; Symbolic link</td>
+<td>静默 &#x2F; 符号链接，视命令而定</td>
+<td><code>ln -s</code> 创建符号链接</td>
+</tr>
+<tr>
+<td><code>-d</code></td>
+<td>Directory &#x2F; Depth</td>
+<td>目录 &#x2F; 深度，视命令而定</td>
+<td><code>ls -d</code> 显示目录本身</td>
+</tr>
+<tr>
+<td><code>-c</code></td>
+<td>Count &#x2F; Create &#x2F; Command</td>
+<td>计数 &#x2F; 创建 &#x2F; 命令，视命令而定</td>
+<td><code>grep -c</code> 统计匹配行数</td>
+</tr>
+<tr>
+<td><code>-t</code></td>
+<td>Time &#x2F; Type</td>
+<td>时间 &#x2F; 类型，视命令而定</td>
+<td><code>ls -t</code> 按修改时间排序</td>
+</tr>
+<tr>
+<td><code>-u</code></td>
+<td>User &#x2F; Update</td>
+<td>用户 &#x2F; 更新，视命令而定</td>
+<td><code>chown -R user:group</code> 中的用户并不是 <code>-u</code> 参数示例；具体用法要看命令</td>
+</tr>
+<tr>
+<td><code>-x</code></td>
+<td>Execute &#x2F; Extract &#x2F; Exclude 等</td>
+<td>执行 &#x2F; 提取 &#x2F; 排除等</td>
+<td>含义高度依赖命令</td>
+</tr>
+<tr>
+<td><code>-e</code></td>
+<td>Expression &#x2F; Execute 等</td>
+<td>表达式 &#x2F; 执行等</td>
+<td><code>grep -e PATTERN</code> 指定匹配模式</td>
+</tr>
+<tr>
+<td><code>-w</code></td>
+<td>Word &#x2F; Wait 等</td>
+<td>单词 &#x2F; 等待等</td>
+<td><code>grep -w root</code> 匹配完整单词</td>
+</tr>
+<tr>
+<td><code>-o</code></td>
+<td>Only &#x2F; Output 等</td>
+<td>仅输出 &#x2F; 输出等</td>
+<td><code>grep -o</code> 只输出匹配部分</td>
+</tr>
+</tbody></table>
+<hr>
 <h2 id="🅰-A"><a href="#🅰-A" class="headerlink" title="🅰  A"></a>🅰  A</h2><ul>
 <li><p><strong><code>-a</code> → all</strong><br>显示所有内容（包括隐藏文件）。<br>示例：<code>ls -a</code> 显示所有文件。</p>
 </li>
@@ -1774,7 +1899,7 @@ snap services                 <span class="token comment"># - 管理 snap 服务
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">139.8k</span>&nbsp;字
+                class="white-color">141.9k</span>&nbsp;字
             
             
             
